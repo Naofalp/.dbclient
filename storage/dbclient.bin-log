@@ -804,4 +804,7 @@
 [34m2024-11-08 10:09:03[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
 [34m2024-11-08 10:12:20[39m [32m[DEBUG][39m Resource server started on port 8828
 [34m2024-11-08 10:15:43[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-08 10:38:26[39m [32m[DEBUG][39m Resource server started on port 8828
+[34m2024-11-08 10:38:30[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-08 10:38:30[39m [32m[DEBUG][39m Closing connection 1730728120349_tree
 
