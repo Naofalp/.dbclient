@@ -1,0 +1,22 @@
+{
+    "1730728120349#foreignKey": [
+        {
+            "constraint_name": "fk_player_team",
+            "table_schema": "wild_db_quests_advanced",
+            "table_name": "player",
+            "column_name": "team_id",
+            "referenced_schema": "wild_db_quests_advanced",
+            "referenced_table": "team",
+            "referenced_column": "id"
+        },
+        {
+            "constraint_name": "fk_player_wizard",
+            "table_schema": "wild_db_quests_advanced",
+            "table_name": "player",
+            "column_name": "wizard_id",
+            "referenced_schema": "wild_db_quests_advanced",
+            "referenced_table": "wizard",
+            "referenced_column": "id"
+        }
+    ]
+}

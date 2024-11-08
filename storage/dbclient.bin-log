@@ -1,0 +1,807 @@
+[34m2024-11-04 14:47:01[39m [32m[DEBUG][39m Resource server started on port 8828
+[34m2024-11-04 14:48:40[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349
+[34m2024-11-04 14:48:49[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-04 14:49:36[39m [32m[ INFO][39m [33mExecuting: SELECT NOW()[39m
+[34m2024-11-04 14:49:36[39m [32m[ INFO][39m [33mResult: 1 rows retrieved in 6ms[39m
+[34m2024-11-04 14:51:53[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-04 14:51:53[39m [32m[DEBUG][39m Resource server started on port 8828
+[34m2024-11-04 14:52:35[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349
+[34m2024-11-04 14:52:35[39m [32m[ INFO][39m [33mExecuting: CREATE DATABASE wild_db_quest[39m
+[34m2024-11-04 14:52:35[39m [32m[ INFO][39m [33mResult: 1 rows affected in 30ms[39m
+[34m2024-11-04 14:53:13[39m [32m[ INFO][39m [33mExecuting: USE wild_db_quest[39m
+[34m2024-11-04 14:53:13[39m [32m[ INFO][39m [33mResult: 0 rows affected in 4ms[39m
+[34m2024-11-04 15:01:14[39m [32m[ INFO][39m [33mExecuting: SHOW TABLES[39m
+[34m2024-11-04 15:01:14[39m [32m[ INFO][39m [33mResult: Empty set in 10ms[39m
+[34m2024-11-04 15:01:20[39m [32m[ERROR][39m [31mExecute fail : SHOW TABLES ORDER BY `Tables_in_wild_db_quest` desc  [39m
+[34m2024-11-04 15:01:20[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY `Tables_in_wild_db_quest` desc' at line 1[39m
+[34m2024-11-04 15:02:06[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE wizard (   id INT NOT NULL AUTO_INCREMENT,   firstname VARCHAR(100) NOT NULL,   lastname VARCHAR(100) NOT NULL,   birthday DATE DEFAULT NULL,   birth_place VARCHAR(255) DEFAULT NULL,   biography TEXT DEFAULT NULL,   PRIMARY KEY (id) )[39m
+[34m2024-11-04 15:02:06[39m [32m[ INFO][39m [33mResult: 0 rows affected in 52ms[39m
+[34m2024-11-04 15:02:10[39m [32m[ INFO][39m [33mExecuting: CREATE DATABASE wild_db_quest[39m
+[34m2024-11-04 15:02:10[39m [32m[ERROR][39m [31mCan't create database 'wild_db_quest'; database exists[39m
+[34m2024-11-04 15:02:12[39m [32m[ INFO][39m [33mExecuting: USE wild_db_quest[39m
+[34m2024-11-04 15:02:12[39m [32m[ INFO][39m [33mResult: 0 rows affected in 4ms[39m
+[34m2024-11-04 15:02:13[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE wizard (   id INT NOT NULL AUTO_INCREMENT,   firstname VARCHAR(100) NOT NULL,   lastname VARCHAR(100) NOT NULL,   birthday DATE DEFAULT NULL,   birth_place VARCHAR(255) DEFAULT NULL,   biography TEXT DEFAULT NULL,   PRIMARY KEY (id) )[39m
+[34m2024-11-04 15:02:13[39m [32m[ERROR][39m [31mTable 'wizard' already exists[39m
+[34m2024-11-04 15:02:20[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard[39m
+[34m2024-11-04 15:02:20[39m [32m[ INFO][39m [33mResult: 0 rows affected in 10ms[39m
+[34m2024-11-04 15:02:34[39m [32m[ INFO][39m [33mExecuting: ADD is_muggle BOOLEAN NOT NULL[39m
+[34m2024-11-04 15:02:34[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ADD is_muggle BOOLEAN NOT NULL' at line 1[39m
+[34m2024-11-04 15:02:46[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE school (     id INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,     name VARCHAR(100) NOT NULL,     capacity INTEGER NULL,     country(255) NOT NULL )[39m
+[34m2024-11-04 15:02:46[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(255) NOT NULL[39m
+[31m)' at line 5[39m
+[34m2024-11-04 15:02:53[39m [32m[ INFO][39m [33mExecuting: ADD is_muggle BOOLEAN NOT NULL[39m
+[34m2024-11-04 15:02:53[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ADD is_muggle BOOLEAN NOT NULL' at line 1[39m
+[34m2024-11-04 15:02:59[39m [32m[ INFO][39m [33mExecuting: ADD is_muggle BOOL NOT NULL[39m
+[34m2024-11-04 15:02:59[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ADD is_muggle BOOL NOT NULL' at line 1[39m
+[34m2024-11-04 15:03:50[39m [32m[ INFO][39m [33mExecuting: ADD is_muggle TINYINT(1) NOT NULL[39m
+[34m2024-11-04 15:03:50[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ADD is_muggle TINYINT(1) NOT NULL' at line 1[39m
+[34m2024-11-04 15:04:42[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE wizard (   id INT NOT NULL AUTO_INCREMENT,   firstname VARCHAR(100) NOT NULL,   lastname VARCHAR(100) NOT NULL,   birthday DATE DEFAULT NULL,   birth_place VARCHAR(255) DEFAULT NULL,   biography TEXT DEFAULT NULL,   PRIMARY KEY (id) )[39m
+[34m2024-11-04 15:04:42[39m [32m[ERROR][39m [31mTable 'wizard' already exists[39m
+[34m2024-11-04 15:04:46[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard[39m
+[34m2024-11-04 15:04:46[39m [32m[ INFO][39m [33mResult: 0 rows affected in 7ms[39m
+[34m2024-11-04 15:04:48[39m [32m[ INFO][39m [33mExecuting: ADD is_muggle TINYINT(1) NOT NULL[39m
+[34m2024-11-04 15:04:48[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ADD is_muggle TINYINT(1) NOT NULL' at line 1[39m
+[34m2024-11-04 15:06:45[39m [32m[ INFO][39m [33mExecuting: ADD is_muggle BOOL[39m
+[34m2024-11-04 15:06:45[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ADD is_muggle BOOL' at line 1[39m
+[34m2024-11-04 15:06:50[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard ADD is_muggle BOOL[39m
+[34m2024-11-04 15:06:50[39m [32m[ INFO][39m [33mResult: 0 rows affected in 43ms[39m
+[34m2024-11-04 15:06:58[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard ADD is_muggle BOOL NOT NULL[39m
+[34m2024-11-04 15:06:58[39m [32m[ERROR][39m [31mDuplicate column name 'is_muggle'[39m
+[34m2024-11-04 15:07:13[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard[39m
+[34m2024-11-04 15:07:13[39m [32m[ INFO][39m [33mResult: 0 rows affected in 17ms[39m
+[34m2024-11-04 15:07:26[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard ADD is_muggle BOOL NOT NULL[39m
+[34m2024-11-04 15:07:26[39m [32m[ERROR][39m [31mDuplicate column name 'is_muggle'[39m
+[34m2024-11-04 15:08:26[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard ADD is_muggle BOOL[39m
+[34m2024-11-04 15:08:26[39m [32m[ERROR][39m [31mDuplicate column name 'is_muggle'[39m
+[34m2024-11-04 15:09:03[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard MODIFY is_muggle BOOL NOT NULL[39m
+[34m2024-11-04 15:09:03[39m [32m[ INFO][39m [33mResult: 0 rows affected in 84ms[39m
+[34m2024-11-04 15:09:33[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard MODIFY is_muggle BOOL NOT NULL[39m
+[34m2024-11-04 15:09:33[39m [32m[ INFO][39m [33mResult: 0 rows affected in 13ms[39m
+[34m2024-11-04 15:09:36[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE school (     id INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,     name VARCHAR(100) NOT NULL,     capacity INTEGER NULL,     country VARCHAR(255) NOT NULL )[39m
+[34m2024-11-04 15:09:36[39m [32m[ INFO][39m [33mResult: 0 rows affected in 52ms[39m
+[34m2024-11-04 15:10:01[39m [32m[ INFO][39m [33mExecuting: SHOW TABLES[39m
+[34m2024-11-04 15:10:01[39m [32m[ INFO][39m [33mResult: 2 rows retrieved in 6ms[39m
+[34m2024-11-04 15:12:11[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-04 15:12:11[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 20ms[39m
+[34m2024-11-04 15:12:28[39m [32m[ INFO][39m [33mExecuting: DESCRIBE school[39m
+[34m2024-11-04 15:12:28[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 6ms[39m
+[34m2024-11-04 15:12:38[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-04 15:12:38[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 6ms[39m
+[34m2024-11-04 15:12:56[39m [32m[ INFO][39m [33mExecuting: SHOW TABLES[39m
+[34m2024-11-04 15:12:56[39m [32m[ INFO][39m [33mResult: 2 rows retrieved in 4ms[39m
+[34m2024-11-04 15:13:36[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-04 15:13:36[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 7ms[39m
+[34m2024-11-04 15:13:54[39m [32m[ INFO][39m [33mExecuting: DESCRIBE school[39m
+[34m2024-11-04 15:13:54[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 9ms[39m
+[34m2024-11-04 15:20:05[39m [32m[ERROR][39m [31mExecute fail : DESCRIBE school LIMIT 100[39m
+[34m2024-11-04 15:20:05[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 100' at line 1[39m
+[34m2024-11-04 15:20:05[39m [32m[ERROR][39m [31mExecute fail : DESCRIBE school LIMIT 100[39m
+[34m2024-11-04 15:20:05[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 100' at line 1[39m
+[34m2024-11-04 15:20:07[39m [32m[ERROR][39m [31mExecute fail : DESCRIBE school LIMIT 100[39m
+[34m2024-11-04 15:20:07[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 100' at line 1[39m
+[34m2024-11-04 15:20:23[39m [32m[ INFO][39m [33mExecuting: DESCRIBE school[39m
+[34m2024-11-04 15:20:23[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 6ms[39m
+[34m2024-11-04 16:13:16[39m [32m[ INFO][39m [33mExecuting: DESCRIBE school[39m
+[34m2024-11-04 16:13:16[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 4ms[39m
+[34m2024-11-04 16:25:57[39m [32m[ INFO][39m [33mExecuting: INSERT INTO wild_db_quest.wizard   (firstname, lastname, birthday, birth_place, biography, is_muggle)   VALUES   ('harry', 'potter', '1980-07-31', 'london', '', '0'),   ('hermione', 'granger', '1979-09-19', '', 'Friend of Harry Potter', '0'),   ('lily', 'potter', '1960-01-30', '', 'mother of Harry Potter', '0'),   ('ron', 'weasley', '1980-03-01', '', 'Best friend of Harry', '0'),   ('ginny', 'weasley', '1981-08-11', '', 'Sister of Ron and girlfriend of Harry', '0'),   ('fred', 'weasley', '1978-04-01', '', '', '0'),   ('george', 'weasley', '1978-04-01', '', '', '0'),   ('arthur', 'weasley', '1950-02-06', '', '', '0'),   ('molly', 'weasley', ' 1949-01-01', '', '', '0'),   ('drago', 'malefoy', '1980-06-05', '', '', '0'),   ('albus', 'dumbledore', '1881-07-01', '', '', '0'),   ('severus', 'rogue', '1960-01-09', '', '', '0'),   ('tom', 'jédusor', '1926-12-31', '', 'Celui-Dont-On-Ne-Doit-Pas-Prononcer-Le-Nom alias Voldermort', '0'),   ('dudley', 'dursley', '1980-06-23', '', 'Cousin d\'Harry', '1')[39m
+[34m2024-11-04 16:25:57[39m [32m[ INFO][39m [33mResult: 14 rows affected in 28ms[39m
+[34m2024-11-04 16:29:07[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard LIMIT 100[39m
+[34m2024-11-04 16:29:07[39m [32m[ INFO][39m [33mResult: 14 rows retrieved in 3ms[39m
+[34m2024-11-04 16:32:10[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM wizard LIMIT 100[39m
+[34m2024-11-04 16:32:10[39m [32m[ INFO][39m [33mResult: 14 rows retrieved in 3ms[39m
+[34m2024-11-04 16:36:53[39m [32m[ INFO][39m [33mExecuting: SELECT lastname AS student_name FROM wizard LIMIT 100[39m
+[34m2024-11-04 16:36:53[39m [32m[ INFO][39m [33mResult: 14 rows retrieved in 3ms[39m
+[34m2024-11-04 16:38:41[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-04 16:38:41[39m [32m[DEBUG][39m Resource server started on port 8828
+[34m2024-11-04 16:38:41[39m [32m[DEBUG][39m Closing connection 1730728120349_tree
+[34m2024-11-04 16:38:45[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-04 16:38:45[39m [32m[DEBUG][39m Closing connection 1730728120349_tree
+[34m2024-11-04 16:38:45[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349
+[34m2024-11-04 16:38:45[39m [32m[DEBUG][39m Closing connection 1730728120349
+[34m2024-11-04 16:38:50[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349
+[34m2024-11-04 16:38:50[39m [32m[DEBUG][39m Closing connection 1730728120349
+[34m2024-11-04 16:38:50[39m [32m[ERROR][39m [31mError: connect ECONNREFUSED 127.0.0.1:3306[39m
+[31m	at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1607:16)[39m
+[34m2024-11-04 16:38:52[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349
+[34m2024-11-04 16:38:52[39m [32m[DEBUG][39m Closing connection 1730728120349
+[34m2024-11-04 16:38:52[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-04 16:38:52[39m [32m[DEBUG][39m Closing connection 1730728120349_tree
+[34m2024-11-04 16:39:01[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-04 16:39:01[39m [32m[DEBUG][39m Closing connection 1730728120349_tree
+[34m2024-11-04 16:39:01[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349
+[34m2024-11-04 16:39:01[39m [32m[DEBUG][39m Closing connection 1730728120349
+[34m2024-11-04 16:39:02[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-04 16:39:02[39m [32m[DEBUG][39m Closing connection 1730728120349_tree
+[34m2024-11-04 16:41:35[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-04 16:41:35[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349
+[34m2024-11-04 16:41:35[39m [32m[ INFO][39m [33mExecuting: SELECT lastname AS student_name FROM wizard LIMIT 100[39m
+[34m2024-11-04 16:41:35[39m [32m[ERROR][39m [31mNo database selected[39m
+[34m2024-11-04 16:41:37[39m [32m[ INFO][39m [33mExecuting: SELECT lastname AS student_name FROM wizard LIMIT 100[39m
+[34m2024-11-04 16:41:37[39m [32m[ERROR][39m [31mNo database selected[39m
+[34m2024-11-04 16:41:43[39m [32m[ INFO][39m [33mExecuting: SELECT lastname AS student_name FROM wizard LIMIT 100[39m
+[34m2024-11-04 16:41:43[39m [32m[ERROR][39m [31mNo database selected[39m
+[34m2024-11-04 16:42:21[39m [32m[ INFO][39m [33mExecuting: SELECT lastname AS student_name FROM wizard LIMIT 100[39m
+[34m2024-11-04 16:42:21[39m [32m[ERROR][39m [31mNo database selected[39m
+[34m2024-11-04 16:42:22[39m [32m[ INFO][39m [33mExecuting: SELECT lastname AS student_name FROM wizard LIMIT 100[39m
+[34m2024-11-04 16:42:22[39m [32m[ERROR][39m [31mNo database selected[39m
+[34m2024-11-04 16:42:23[39m [32m[ INFO][39m [33mExecuting: SELECT lastname AS student_name FROM wizard LIMIT 100[39m
+[34m2024-11-04 16:42:23[39m [32m[ERROR][39m [31mNo database selected[39m
+[34m2024-11-04 16:44:18[39m [32m[ INFO][39m [33mExecuting: USE wild_db_quest[39m
+[34m2024-11-04 16:44:18[39m [32m[ INFO][39m [33mResult: 0 rows affected in 2ms[39m
+[34m2024-11-04 16:44:22[39m [32m[ INFO][39m [33mExecuting: SELECT lastname AS student_name FROM wizard LIMIT 100[39m
+[34m2024-11-04 16:44:22[39m [32m[ INFO][39m [33mResult: 14 rows retrieved in 23ms[39m
+[34m2024-11-04 16:51:44[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, birthday  FROM wizard  WHERE  lastname LIKE 'Weas%' AND birthday BETWEEN '1970-01-01' AND '2000-01-01' LIMIT 100[39m
+[34m2024-11-04 16:51:44[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 16ms[39m
+[34m2024-11-04 16:51:59[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, birthday  FROM wizard  WHERE  lastname LIKE 'Weas%' birthday BETWEEN '1970-01-01' AND '2000-01-01' LIMIT 100[39m
+[34m2024-11-04 16:51:59[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'birthday BETWEEN '1970-01-01' AND '2000-01-01' LIMIT 100' at line 5[39m
+[34m2024-11-04 16:52:09[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, birthday  FROM wizard  WHERE  lastname LIKE 'Weas%' AND birthday BETWEEN '1970-01-01' AND '2000-01-01' LIMIT 100[39m
+[34m2024-11-04 16:52:09[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 4ms[39m
+[34m2024-11-04 16:54:26[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, birthday  FROM `wizard`  WHERE  lastname LIKE 'Weas%' AND birthday BETWEEN '1970-01-01' AND '2000-01-01' LIMIT 100[39m
+[34m2024-11-04 16:54:26[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 3ms[39m
+[34m2024-11-04 16:54:28[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, birthday  FROM `wizard`  WHERE  lastname LIKE 'Weas%' AND birthday BETWEEN '1970-01-01' AND '2000-01-01' LIMIT 100[39m
+[34m2024-11-04 16:54:28[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 3ms[39m
+[34m2024-11-04 16:54:30[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, birthday  FROM `wizard`  WHERE  lastname LIKE 'Weas%' AND birthday BETWEEN '1970-01-01' AND '2000-01-01' LIMIT 100[39m
+[34m2024-11-04 16:54:30[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 3ms[39m
+[34m2024-11-04 16:54:30[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, birthday  FROM `wizard`  WHERE  lastname LIKE 'Weas%' AND birthday BETWEEN '1970-01-01' AND '2000-01-01' LIMIT 100[39m
+[34m2024-11-04 16:54:30[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 3ms[39m
+[34m2024-11-04 16:54:36[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, birthday  FROM wizard WHERE  lastname LIKE 'Weas%' AND birthday BETWEEN '1970-01-01' AND '2000-01-01' LIMIT 100[39m
+[34m2024-11-04 16:54:36[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 3ms[39m
+[34m2024-11-04 17:06:18[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, birthday  FROM wizard WHERE  lastname LIKE 'Weas%' AND birthday BETWEEN '1970-01-01' AND '2000-01-01' LIMIT 2[39m
+[34m2024-11-04 17:06:18[39m [32m[ INFO][39m [33mResult: 2 rows retrieved in 6ms[39m
+[34m2024-11-04 17:12:06[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM wizard ORDER BY lastname ASC, birthday DESC LIMIT 100[39m
+[34m2024-11-04 17:12:06[39m [32m[ INFO][39m [33mResult: 14 rows retrieved in 5ms[39m
+[34m2024-11-04 17:12:14[39m [32m[ERROR][39m [31mExecute fail : SELECT firstname, lastname FROM wizard , birthday DESC ORDER BY `firstname` desc LIMIT 100 [39m
+[34m2024-11-04 17:12:14[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC ORDER BY `firstname` desc LIMIT 100' at line 1[39m
+[34m2024-11-04 17:12:30[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, birthday  FROM wizard WHERE  lastname LIKE 'Weas%' AND birthday BETWEEN '1970-01-01' AND '2000-01-01' LIMIT 2[39m
+[34m2024-11-04 17:12:30[39m [32m[ INFO][39m [33mResult: 2 rows retrieved in 5ms[39m
+[34m2024-11-04 17:12:32[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM wizard ORDER BY lastname ASC, birthday DESC LIMIT 100[39m
+[34m2024-11-04 17:12:32[39m [32m[ INFO][39m [33mResult: 14 rows retrieved in 4ms[39m
+[34m2024-11-04 17:12:35[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM wizard ORDER BY lastname ASC, birthday DESC LIMIT 100[39m
+[34m2024-11-04 17:12:35[39m [32m[ INFO][39m [33mResult: 14 rows retrieved in 6ms[39m
+[34m2024-11-04 17:13:12[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM wizard ORDER BY lastname ASC, birthday DESC LIMIT 100[39m
+[34m2024-11-04 17:13:12[39m [32m[ INFO][39m [33mResult: 14 rows retrieved in 4ms[39m
+[34m2024-11-04 17:14:27[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE lastname='Weasley' ORDER BY birthday DESC LIMIT 0,3[39m
+[34m2024-11-04 17:14:27[39m [32m[ INFO][39m [33mResult: 3 rows retrieved in 5ms[39m
+[34m2024-11-04 17:14:39[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE lastname='Weasley' ORDER BY birthday DESC LIMIT 0 OFFSET 3[39m
+[34m2024-11-04 17:14:39[39m [32m[ INFO][39m [33mResult: Empty set in 4ms[39m
+[34m2024-11-04 17:14:40[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE lastname='Weasley' ORDER BY birthday DESC LIMIT 0 OFFSET 3[39m
+[34m2024-11-04 17:14:40[39m [32m[ INFO][39m [33mResult: Empty set in 4ms[39m
+[34m2024-11-04 17:15:03[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE lastname='Weasley' ORDER BY birthday DESC LIMIT 1 OFFSET 3[39m
+[34m2024-11-04 17:15:03[39m [32m[ INFO][39m [33mResult: 1 rows retrieved in 5ms[39m
+[34m2024-11-04 17:15:46[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE lastname='Weasley' ORDER BY birthday DESC LIMIT 0,3[39m
+[34m2024-11-04 17:15:46[39m [32m[ INFO][39m [33mResult: 3 rows retrieved in 7ms[39m
+[34m2024-11-04 17:15:53[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE lastname='Weasley' ORDER BY birthday DESC LIMIT 3[39m
+[34m2024-11-04 17:15:53[39m [32m[ INFO][39m [33mResult: 3 rows retrieved in 7ms[39m
+[34m2024-11-04 17:23:11[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE lastname='Weasley' ORDER BY birthday DESC LIMIT 3[39m
+[34m2024-11-04 17:23:11[39m [32m[ INFO][39m [33mResult: 3 rows retrieved in 8ms[39m
+[34m2024-11-04 17:23:28[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE lastname='Weasley' ORDER BY birthday DESC LIMIT 0,3[39m
+[34m2024-11-04 17:23:28[39m [32m[ INFO][39m [33mResult: 3 rows retrieved in 7ms[39m
+[34m2024-11-04 17:23:30[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE lastname='Weasley' ORDER BY birthday DESC LIMIT 0,3[39m
+[34m2024-11-04 17:23:30[39m [32m[ INFO][39m [33mResult: 3 rows retrieved in 4ms[39m
+[34m2024-11-04 17:23:37[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE lastname='Weasley' ORDER BY birthday DESC LIMIT 3[39m
+[34m2024-11-04 17:23:37[39m [32m[ INFO][39m [33mResult: 3 rows retrieved in 4ms[39m
+[34m2024-11-04 17:24:12[39m [32m[DEBUG][39m Resource server started on port 8828
+[34m2024-11-04 17:24:20[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-04 17:24:23[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349
+[34m2024-11-04 17:25:14[39m [32m[DEBUG][39m Resource server started on port 8828
+[34m2024-11-04 17:25:15[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-04 17:25:22[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349
+[34m2024-11-04 17:25:25[39m [32m[ERROR][39m [31mExecute fail : KILL 14;[39m
+[34m2024-11-04 17:25:25[39m [32m[ERROR][39m [31mQuery execution was interrupted[39m
+[34m2024-11-04 17:25:26[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-04 17:25:26[39m [32m[ERROR][39m [31mExecute fail : KILL 14;[39m
+[34m2024-11-04 17:25:26[39m [32m[ERROR][39m [31mUnknown thread id: 14[39m
+[34m2024-11-04 17:25:28[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349
+[34m2024-11-04 17:25:29[39m [32m[ERROR][39m [31mExecute fail : KILL 16;[39m
+[34m2024-11-04 17:25:29[39m [32m[ERROR][39m [31mQuery execution was interrupted[39m
+[34m2024-11-04 17:25:31[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-04 17:25:31[39m [32m[ERROR][39m [31mExecute fail : KILL 16;[39m
+[34m2024-11-04 17:25:31[39m [32m[ERROR][39m [31mUnknown thread id: 16[39m
+[34m2024-11-04 17:25:32[39m [32m[ERROR][39m [31mExecute fail : KILL 5;[39m
+[34m2024-11-04 17:25:32[39m [32m[ERROR][39m [31mUnknown thread id: 5[39m
+[34m2024-11-04 17:25:33[39m [32m[ERROR][39m [31mExecute fail : KILL 16;[39m
+[34m2024-11-04 17:25:33[39m [32m[ERROR][39m [31mUnknown thread id: 16[39m
+[34m2024-11-04 17:28:52[39m [32m[DEBUG][39m Resource server started on port 8828
+[34m2024-11-04 17:29:03[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-05 10:10:08[39m [32m[DEBUG][39m Resource server started on port 8828
+[34m2024-11-05 10:10:13[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-05 10:10:47[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349
+[34m2024-11-05 10:11:36[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE lastname='Weasley' ORDER BY birthday DESC LIMIT 3[39m
+[34m2024-11-05 10:11:36[39m [32m[ INFO][39m [33mResult: 3 rows retrieved in 5ms[39m
+[34m2024-11-05 11:06:23[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wild_db_quest LIMIT 100[39m
+[34m2024-11-05 11:06:23[39m [32m[ERROR][39m [31mTable 'wild_db_quest.wild_db_quest' doesn't exist[39m
+[34m2024-11-05 11:08:01[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE birthday BETWEEN '1975-01-01' AND '1985-12-31' LIMIT 100[39m
+[34m2024-11-05 11:08:01[39m [32m[ INFO][39m [33mResult: 8 rows retrieved in 3ms[39m
+[34m2024-11-05 11:09:56[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE birthday BETWEEN '1975-01-01' AND '1985-12-31' LIMIT 100[39m
+[34m2024-11-05 11:09:56[39m [32m[ INFO][39m [33mResult: 8 rows retrieved in 3ms[39m
+[34m2024-11-05 11:10:41[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE birthday BETWEEN '1975-01-01' AND '1985-12-31' LIMIT 100[39m
+[34m2024-11-05 11:10:41[39m [32m[ INFO][39m [33mResult: 8 rows retrieved in 4ms[39m
+[34m2024-11-05 11:11:17[39m [32m[DEBUG][39m Get export data, do exporting..
+[34m2024-11-05 11:11:17[39m [32m[DEBUG][39m Export data by XLSX..
+[34m2024-11-05 11:11:17[39m [32m[DEBUG][39m write file to file:///c%3A/Users/NaofalPereira/OneDrive%20-%20scpe-melting.fr%20%281%29/Bureau/wizard_2024-11-05_111109.xlsx, true
+[34m2024-11-05 11:11:18[39m [32m[DEBUG][39m Export XLSX success, Cost: 54ms
+[34m2024-11-05 11:14:55[39m [32m[ INFO][39m [33mExecuting: SELECT firstname FROM wizard WHERE firstname LIKE 'H%' LIMIT 100[39m
+[34m2024-11-05 11:14:55[39m [32m[ INFO][39m [33mResult: 2 rows retrieved in 4ms[39m
+[34m2024-11-05 11:18:01[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM wizard WHERE lastname='potter' ORDER BY firstname LIMIT 100[39m
+[34m2024-11-05 11:18:01[39m [32m[ INFO][39m [33mResult: 2 rows retrieved in 5ms[39m
+[34m2024-11-05 11:19:49[39m [32m[DEBUG][39m Get export data, do exporting..
+[34m2024-11-05 11:19:49[39m [32m[DEBUG][39m Export data by Markdown..
+[34m2024-11-05 11:19:49[39m [32m[DEBUG][39m Export Markdown success, Cost: 58ms
+[34m2024-11-05 11:27:17[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, birthday FROM wizard ORDER BY birthday ASC LIMIT 1[39m
+[34m2024-11-05 11:27:17[39m [32m[ INFO][39m [33mResult: 1 rows retrieved in 5ms[39m
+[34m2024-11-05 11:27:52[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, birthday FROM wizard ORDER BY birthday ASC LIMIT 1 OFFSET 2[39m
+[34m2024-11-05 11:27:52[39m [32m[ INFO][39m [33mResult: 1 rows retrieved in 3ms[39m
+[34m2024-11-05 11:28:17[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, birthday FROM wizard ORDER BY birthday ASC LIMIT 1 OFFSET 1[39m
+[34m2024-11-05 11:28:17[39m [32m[ INFO][39m [33mResult: 1 rows retrieved in 3ms[39m
+[34m2024-11-05 11:28:21[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, birthday FROM wizard ORDER BY birthday ASC LIMIT 1 OFFSET 0[39m
+[34m2024-11-05 11:28:21[39m [32m[ INFO][39m [33mResult: 1 rows retrieved in 4ms[39m
+[34m2024-11-05 11:28:31[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, birthday FROM wizard ORDER BY birthday ASC LIMIT 1[39m
+[34m2024-11-05 11:28:31[39m [32m[ INFO][39m [33mResult: 1 rows retrieved in 4ms[39m
+[34m2024-11-05 11:46:52[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, birthday FROM wizard ORDER BY birthday ASC LIMIT 1[39m
+[34m2024-11-05 11:46:52[39m [32m[ INFO][39m [33mResult: 1 rows retrieved in 4ms[39m
+[34m2024-11-05 11:46:54[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM wizard WHERE lastname='potter' ORDER BY firstname LIMIT 100[39m
+[34m2024-11-05 11:46:54[39m [32m[ INFO][39m [33mResult: 2 rows retrieved in 3ms[39m
+[34m2024-11-05 11:46:55[39m [32m[ INFO][39m [33mExecuting: SELECT firstname FROM wizard WHERE firstname LIKE 'H%' LIMIT 100[39m
+[34m2024-11-05 11:46:55[39m [32m[ INFO][39m [33mResult: 2 rows retrieved in 3ms[39m
+[34m2024-11-05 11:46:56[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE birthday BETWEEN '1975-01-01' AND '1985-12-31' LIMIT 100[39m
+[34m2024-11-05 11:46:56[39m [32m[ INFO][39m [33mResult: 8 rows retrieved in 3ms[39m
+[34m2024-11-05 11:46:57[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE lastname='Weasley' ORDER BY birthday DESC LIMIT 3[39m
+[34m2024-11-05 11:46:57[39m [32m[ INFO][39m [33mResult: 3 rows retrieved in 2ms[39m
+[34m2024-11-05 11:57:34[39m [32m[ INFO][39m [33mExecuting: SHOW TABLES[39m
+[34m2024-11-05 11:57:34[39m [32m[ INFO][39m [33mResult: 2 rows retrieved in 5ms[39m
+[34m2024-11-05 11:57:36[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-05 11:57:36[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 6ms[39m
+[34m2024-11-05 11:57:39[39m [32m[ INFO][39m [33mExecuting: DESCRIBE school[39m
+[34m2024-11-05 11:57:39[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 4ms[39m
+[34m2024-11-05 11:57:41[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-05 11:57:41[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 5ms[39m
+[34m2024-11-05 11:57:43[39m [32m[ INFO][39m [33mExecuting: SHOW TABLES[39m
+[34m2024-11-05 11:57:43[39m [32m[ INFO][39m [33mResult: 2 rows retrieved in 4ms[39m
+[34m2024-11-05 11:57:47[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-05 11:57:47[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 3ms[39m
+[34m2024-11-05 11:57:48[39m [32m[ INFO][39m [33mExecuting: DESCRIBE school[39m
+[34m2024-11-05 11:57:48[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 4ms[39m
+[34m2024-11-05 11:57:49[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-05 11:57:49[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 3ms[39m
+[34m2024-11-05 11:57:49[39m [32m[ INFO][39m [33mExecuting: SHOW TABLES[39m
+[34m2024-11-05 11:57:49[39m [32m[ INFO][39m [33mResult: 2 rows retrieved in 3ms[39m
+[34m2024-11-05 11:57:51[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-05 11:57:51[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 3ms[39m
+[34m2024-11-05 11:57:52[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-05 11:57:52[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 4ms[39m
+[34m2024-11-05 11:57:54[39m [32m[ INFO][39m [33mExecuting: DESCRIBE school[39m
+[34m2024-11-05 11:57:54[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 4ms[39m
+[34m2024-11-05 11:58:18[39m [32m[DEBUG][39m Get export data, do exporting..
+[34m2024-11-05 11:58:18[39m [32m[DEBUG][39m Export data by XLSX..
+[34m2024-11-05 11:58:18[39m [32m[DEBUG][39m write file to file:///c%3A/Users/NaofalPereira/OneDrive%20-%20scpe-melting.fr%20%281%29/Bureau/QUETE%201.xlsx, true
+[34m2024-11-05 11:58:18[39m [32m[DEBUG][39m Export XLSX success, Cost: 106ms
+[34m2024-11-05 11:59:21[39m [32m[DEBUG][39m Get export data, do exporting..
+[34m2024-11-05 11:59:21[39m [32m[DEBUG][39m Export data by XLSX..
+[34m2024-11-05 11:59:21[39m [32m[DEBUG][39m write file to file:///c%3A/Users/NaofalPereira/OneDrive%20-%20scpe-melting.fr%20%281%29/Bureau/Quete%201a.xlsx, true
+[34m2024-11-05 11:59:21[39m [32m[DEBUG][39m Export XLSX success, Cost: 21ms
+[34m2024-11-05 11:59:41[39m [32m[DEBUG][39m Get export data, do exporting..
+[34m2024-11-05 11:59:41[39m [32m[DEBUG][39m Export data by XLSX..
+[34m2024-11-05 11:59:41[39m [32m[DEBUG][39m write file to file:///c%3A/Users/NaofalPereira/OneDrive%20-%20scpe-melting.fr%20%281%29/Bureau/QUETE%201aa.xlsx, true
+[34m2024-11-05 11:59:41[39m [32m[DEBUG][39m Export XLSX success, Cost: 38ms
+[34m2024-11-05 11:59:47[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-05 11:59:47[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 3ms[39m
+[34m2024-11-05 11:59:49[39m [32m[ INFO][39m [33mExecuting: DESCRIBE school[39m
+[34m2024-11-05 11:59:49[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 4ms[39m
+[34m2024-11-05 11:59:51[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-05 11:59:51[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 5ms[39m
+[34m2024-11-05 11:59:56[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard,school[39m
+[34m2024-11-05 11:59:56[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',school' at line 1[39m
+[34m2024-11-05 12:00:00[39m [32m[ INFO][39m [33mExecuting: DESCRIBE school[39m
+[34m2024-11-05 12:00:00[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 3ms[39m
+[34m2024-11-05 12:00:00[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-05 12:00:00[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 3ms[39m
+[34m2024-11-05 12:01:03[39m [32m[ INFO][39m [33mExecuting: SHOW TABLES[39m
+[34m2024-11-05 12:01:03[39m [32m[ INFO][39m [33mResult: 2 rows retrieved in 4ms[39m
+[34m2024-11-05 12:01:04[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-05 12:01:04[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 6ms[39m
+[34m2024-11-05 12:01:05[39m [32m[ INFO][39m [33mExecuting: SHOW TABLES[39m
+[34m2024-11-05 12:01:05[39m [32m[ INFO][39m [33mResult: 2 rows retrieved in 3ms[39m
+[34m2024-11-05 12:01:13[39m [32m[DEBUG][39m Get export data, do exporting..
+[34m2024-11-05 12:01:13[39m [32m[DEBUG][39m Export data by XLSX..
+[34m2024-11-05 12:01:13[39m [32m[DEBUG][39m write file to file:///c%3A/Users/NaofalPereira/OneDrive%20-%20scpe-melting.fr%20%281%29/Bureau/QUETE%201%20et%202_2024-11-05_120109.xlsx, true
+[34m2024-11-05 12:01:13[39m [32m[DEBUG][39m Export XLSX success, Cost: 46ms
+[34m2024-11-05 12:01:15[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-05 12:01:15[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 4ms[39m
+[34m2024-11-05 12:01:19[39m [32m[ INFO][39m [33mExecuting: DESCRIBE school[39m
+[34m2024-11-05 12:01:19[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 3ms[39m
+[34m2024-11-05 12:01:22[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-05 12:01:22[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 6ms[39m
+[34m2024-11-05 14:14:11[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE birthday BETWEEN '1975-01-01' AND '1985-12-31' AND is_muggle=`0` LIMIT 100[39m
+[34m2024-11-05 14:14:11[39m [32m[ERROR][39m [31mUnknown column '0' in 'where clause'[39m
+[34m2024-11-05 14:14:17[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE birthday BETWEEN '1975-01-01' AND '1985-12-31' AND is_muggle=0 LIMIT 100[39m
+[34m2024-11-05 14:14:17[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 6ms[39m
+[34m2024-11-05 14:14:24[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE birthday BETWEEN '1975-01-01' AND '1985-12-31' AND is_muggle=1 LIMIT 100[39m
+[34m2024-11-05 14:14:24[39m [32m[ INFO][39m [33mResult: 1 rows retrieved in 4ms[39m
+[34m2024-11-05 14:14:38[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE birthday BETWEEN '1975-01-01' AND '1985-12-31' AND is_muggle=0 LIMIT 100[39m
+[34m2024-11-05 14:14:38[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 3ms[39m
+[34m2024-11-05 14:15:05[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, birthday FROM wizard WHERE is_muggle=0 ORDER BY birthday ASC LIMIT 1[39m
+[34m2024-11-05 14:15:05[39m [32m[ INFO][39m [33mResult: 1 rows retrieved in 4ms[39m
+[34m2024-11-05 14:15:25[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE birthday BETWEEN '1975-01-01' AND '1985-12-31' AND is_muggle=0 LIMIT 100[39m
+[34m2024-11-05 14:15:25[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 15ms[39m
+[34m2024-11-05 14:17:12[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE birthday BETWEEN '1975-01-01' AND '1985-12-31' AND is_muggle=0 LIMIT 100[39m
+[34m2024-11-05 14:17:12[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 10ms[39m
+[34m2024-11-05 14:17:18[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, birthday FROM wizard WHERE is_muggle=0 ORDER BY birthday ASC LIMIT 1[39m
+[34m2024-11-05 14:17:18[39m [32m[ INFO][39m [33mResult: 1 rows retrieved in 6ms[39m
+[34m2024-11-05 14:17:39[39m [32m[ INFO][39m [33mExecuting: SELECT firstname FROM wizard WHERE firstname LIKE 'H%' LIMIT 100[39m
+[34m2024-11-05 14:17:39[39m [32m[ INFO][39m [33mResult: 2 rows retrieved in 4ms[39m
+[34m2024-11-05 14:17:41[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE birthday BETWEEN '1975-01-01' AND '1985-12-31' AND is_muggle=0 LIMIT 100[39m
+[34m2024-11-05 14:17:41[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 3ms[39m
+[34m2024-11-05 14:18:06[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE birthday BETWEEN '1975-01-01' AND '1985-12-31' is_muggle=0 LIMIT 100[39m
+[34m2024-11-05 14:18:06[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is_muggle=0 LIMIT 100' at line 1[39m
+[34m2024-11-05 14:18:11[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE birthday BETWEEN '1975-01-01' AND '1985-12-31' AND is_muggle=0 LIMIT 100[39m
+[34m2024-11-05 14:18:11[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 4ms[39m
+[34m2024-11-05 14:18:31[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, birthday FROM wizard WHERE is_muggle=0 ORDER BY birthday ASC LIMIT 1[39m
+[34m2024-11-05 14:18:31[39m [32m[ INFO][39m [33mResult: 1 rows retrieved in 4ms[39m
+[34m2024-11-05 14:18:36[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, birthday FROM wizard WHERE is_muggle=0 ORDER BY birthday ASC LIMIT 1[39m
+[34m2024-11-05 14:18:36[39m [32m[ INFO][39m [33mResult: 1 rows retrieved in 4ms[39m
+[34m2024-11-05 14:44:26[39m [32m[ INFO][39m [33mExecuting: DESCRIBE school[39m
+[34m2024-11-05 14:44:26[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 9ms[39m
+[34m2024-11-05 14:53:16[39m [32m[ INFO][39m [33mExecuting: DESCRIBE school[39m
+[34m2024-11-05 14:53:16[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 3ms[39m
+[34m2024-11-05 15:03:47[39m [32m[ INFO][39m [33mExecuting: INSERT INTO school (name, country, capacity) VALUES   ('Beauxbatons Academy of Magic', 'France', 550),    ('Castelobruxo', 'Brazil', 380),    ('Durmstrang Institute', 'Norway', 570),   ('Hogwarts School of Witchcraft and Wizardry', 'United Kingdom', 450),   ('0Ilvermorny School of Witchcraft and Wizardry','USA','300'),   ('Koldovstoretz','Russia','125'),   ('Mahoutokoro School of Magic','Japan','800'),   ('Uagadou School of Magic','Uganda','350')[39m
+[34m2024-11-05 15:03:47[39m [32m[ INFO][39m [33mResult: 8 rows affected in 19ms[39m
+[34m2024-11-05 15:04:09[39m [32m[ INFO][39m [33mExecuting: Show * TABLE school[39m
+[34m2024-11-05 15:04:09[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* TABLE school' at line 1[39m
+[34m2024-11-05 15:04:18[39m [32m[ INFO][39m [33mExecuting: SHOW * TABLE school[39m
+[34m2024-11-05 15:04:18[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* TABLE school' at line 1[39m
+[34m2024-11-05 15:04:42[39m [32m[ INFO][39m [33mExecuting: SHOW * TABLE school[39m
+[34m2024-11-05 15:04:42[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* TABLE school' at line 1[39m
+[34m2024-11-05 15:04:49[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM school LIMIT 100[39m
+[34m2024-11-05 15:04:49[39m [32m[ INFO][39m [33mResult: 8 rows retrieved in 5ms[39m
+[34m2024-11-05 15:10:23[39m [32m[ INFO][39m [33mExecuting: UPDATE school SET country = 'Sweden' WHERE name = 'Durmstrang Institute'[39m
+[34m2024-11-05 15:10:23[39m [32m[ INFO][39m [33mResult: 1 rows affected in 6ms[39m
+[34m2024-11-05 15:10:38[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM school LIMIT 100[39m
+[34m2024-11-05 15:10:38[39m [32m[ INFO][39m [33mResult: 8 rows retrieved in 3ms[39m
+[34m2024-11-05 15:12:39[39m [32m[ INFO][39m [33mExecuting: UPDATE school SET country = 'Sweden' WHERE name = 'Durmstrang Institute', SET capacity = 150 WHERE name = 'Koldovstoretz'[39m
+[34m2024-11-05 15:12:39[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',[39m
+[31mSET capacity = 150[39m
+[31mWHERE name = 'Koldovstoretz'' at line 3[39m
+[34m2024-11-05 15:12:43[39m [32m[ INFO][39m [33mExecuting: UPDATE school SET country = 'Sweden' WHERE name = 'Durmstrang Institute' SET capacity = 150 WHERE name = 'Koldovstoretz'[39m
+[34m2024-11-05 15:12:43[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET capacity = 150[39m
+[31mWHERE name = 'Koldovstoretz'' at line 4[39m
+[34m2024-11-05 15:12:54[39m [32m[ INFO][39m [33mExecuting: UPDATE school SET country = 'Sweden' WHERE name = 'Durmstrang Institute' AND SET capacity = 150 WHERE name = 'Koldovstoretz'[39m
+[34m2024-11-05 15:12:54[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET capacity = 150[39m
+[31mWHERE name = 'Koldovstoretz'' at line 5[39m
+[34m2024-11-05 15:13:09[39m [32m[ INFO][39m [33mExecuting: UPDATE school SET capacity = 150 WHERE name = 'Koldovstoretz'[39m
+[34m2024-11-05 15:13:09[39m [32m[ INFO][39m [33mResult: 1 rows affected in 6ms[39m
+[34m2024-11-05 15:13:10[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM school LIMIT 100[39m
+[34m2024-11-05 15:13:10[39m [32m[ INFO][39m [33mResult: 8 rows retrieved in 3ms[39m
+[34m2024-11-05 15:13:12[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM school LIMIT 100[39m
+[34m2024-11-05 15:13:12[39m [32m[ INFO][39m [33mResult: 8 rows retrieved in 3ms[39m
+[34m2024-11-05 15:13:24[39m [32m[ INFO][39m [33mExecuting: UPDATE school SET capacity = 160 WHERE name = 'Koldovstoretz'[39m
+[34m2024-11-05 15:13:24[39m [32m[ INFO][39m [33mResult: 1 rows affected in 6ms[39m
+[34m2024-11-05 15:13:35[39m [32m[ INFO][39m [33mExecuting: UPDATE school SET capacity = 150 WHERE name = 'Koldovstoretz'[39m
+[34m2024-11-05 15:13:35[39m [32m[ INFO][39m [33mResult: 1 rows affected in 4ms[39m
+[34m2024-11-05 15:18:29[39m [32m[ INFO][39m [33mExecuting: TRUNCATE FROM school WHERE LIKE '%magic%'[39m
+[34m2024-11-05 15:18:29[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM school[39m
+[31mWHERE LIKE '%magic%'' at line 1[39m
+[34m2024-11-05 15:19:22[39m [32m[ INFO][39m [33mExecuting: DELETE FROM school WHERE LIKE '%magic%'[39m
+[34m2024-11-05 15:19:22[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%magic%'' at line 2[39m
+[34m2024-11-05 15:19:41[39m [32m[ INFO][39m [33mExecuting: DELETE FROM school WHERE name LIKE '%magic%'[39m
+[34m2024-11-05 15:19:41[39m [32m[ INFO][39m [33mResult: 3 rows affected in 18ms[39m
+[34m2024-11-05 15:20:57[39m [32m[ INFO][39m [33mExecuting: DELETE FROM school WHERE name LIKE '%magic%'[39m
+[34m2024-11-05 15:20:57[39m [32m[ INFO][39m [33mResult: 0 rows affected in 3ms[39m
+[34m2024-11-05 15:21:20[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM school LIMIT 100[39m
+[34m2024-11-05 15:21:20[39m [32m[ INFO][39m [33mResult: 5 rows retrieved in 2ms[39m
+[34m2024-11-05 15:27:24[39m [32m[DEBUG][39m Get export data, do exporting..
+[34m2024-11-05 15:27:24[39m [32m[DEBUG][39m Export data by XLSX..
+[34m2024-11-05 15:27:24[39m [32m[DEBUG][39m write file to file:///c%3A/Users/NaofalPereira/OneDrive%20-%20scpe-melting.fr%20%281%29/Bureau/school_2024-11-05_152720.xlsx, true
+[34m2024-11-05 15:27:24[39m [32m[DEBUG][39m Export XLSX success, Cost: 39ms
+[34m2024-11-05 17:29:06[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-05 17:29:06[39m [32m[DEBUG][39m Resource server started on port 8828
+[34m2024-11-06 11:46:52[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-06 11:46:52[39m [32m[DEBUG][39m Resource server started on port 8828
+[34m2024-11-06 11:48:57[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349
+[34m2024-11-06 11:48:57[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard  ADD school_id INT NOT NULL[39m
+[34m2024-11-06 11:48:57[39m [32m[ INFO][39m [33mResult: 0 rows affected in 78ms[39m
+[34m2024-11-06 11:49:11[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-06 11:49:11[39m [32m[ INFO][39m [33mResult: 8 rows retrieved in 55ms[39m
+[34m2024-11-06 11:50:19[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)    REFERENCES school(id)[39m
+[34m2024-11-06 11:50:19[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 11:50:37[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)    REFERENCES school(id)[39m
+[34m2024-11-06 11:50:37[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 11:50:59[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)    REFERENCES school(id)[39m
+[34m2024-11-06 11:50:59[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 11:51:09[39m [32m[ INFO][39m [33mExecuting: DESCRIBE school[39m
+[34m2024-11-06 11:51:09[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 5ms[39m
+[34m2024-11-06 11:51:17[39m [32m[ INFO][39m [33mExecuting: SHOW TABLES[39m
+[34m2024-11-06 11:51:17[39m [32m[ INFO][39m [33mResult: 2 rows retrieved in 6ms[39m
+[34m2024-11-06 11:51:22[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-06 11:51:22[39m [32m[ INFO][39m [33mResult: 8 rows retrieved in 6ms[39m
+[34m2024-11-06 11:51:29[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM school LIMIT 100[39m
+[34m2024-11-06 11:51:29[39m [32m[ INFO][39m [33mResult: 5 rows retrieved in 5ms[39m
+[34m2024-11-06 11:52:59[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)    REFERENCES school(id)[39m
+[34m2024-11-06 11:52:59[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 11:55:26[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)    REFERENCES school(school_id)[39m
+[34m2024-11-06 11:55:26[39m [32m[ERROR][39m [31mFailed to add the foreign key constraint. Missing column 'school_id' for constraint 'fk_wizard_school' in the referenced table 'school'[39m
+[34m2024-11-06 11:55:50[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)    REFERENCES school(id)[39m
+[34m2024-11-06 11:55:50[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 11:56:32[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id) REFERENCES school(id)[39m
+[34m2024-11-06 11:56:32[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 11:57:31[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)   REFERENCES school(id)[39m
+[34m2024-11-06 11:57:31[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 11:57:47[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)   REFERENCES school(id)[39m
+[34m2024-11-06 11:57:47[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 11:57:59[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-06 11:57:59[39m [32m[ INFO][39m [33mResult: 8 rows retrieved in 5ms[39m
+[34m2024-11-06 11:59:43[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)   REFERENCES school(id)[39m
+[34m2024-11-06 11:59:43[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 11:59:43[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)   REFERENCES school(id)[39m
+[34m2024-11-06 11:59:43[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 11:59:44[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)   REFERENCES school(id)[39m
+[34m2024-11-06 11:59:44[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 11:59:48[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)   REFERENCES school(id)[39m
+[34m2024-11-06 11:59:48[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 12:00:39[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)   REFERENCES school(id)[39m
+[34m2024-11-06 12:00:39[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 12:02:51[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)   REFERENCES school(id)[39m
+[34m2024-11-06 12:02:51[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 12:02:52[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)   REFERENCES school(id)[39m
+[34m2024-11-06 12:02:52[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 12:02:52[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)   REFERENCES school(id)[39m
+[34m2024-11-06 12:02:52[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 12:02:52[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)   REFERENCES school(id)[39m
+[34m2024-11-06 12:02:52[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 12:02:53[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)   REFERENCES school(id)[39m
+[34m2024-11-06 12:02:53[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 12:02:53[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)   REFERENCES school(id)[39m
+[34m2024-11-06 12:02:53[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 12:02:53[39m [32m[ INFO][39m [33mExecuting: ALTER TABLE wizard   ADD CONSTRAINT fk_wizard_school    FOREIGN KEY (school_id)   REFERENCES school(id)[39m
+[34m2024-11-06 12:02:53[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quest`.`#sql-3da8_1b`, CONSTRAINT `fk_wizard_school` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`))[39m
+[34m2024-11-06 12:06:02[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE school_id NOT IN (SELECT id FROM school) LIMIT 100[39m
+[34m2024-11-06 12:06:02[39m [32m[ INFO][39m [33mResult: 14 rows retrieved in 20ms[39m
+[34m2024-11-06 12:22:54[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE school_id NOT IN (SELECT id FROM school) LIMIT 100[39m
+[34m2024-11-06 12:22:54[39m [32m[ INFO][39m [33mResult: 14 rows retrieved in 5ms[39m
+[34m2024-11-06 12:23:20[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard WHERE school_id NOT IN (SELECT id FROM school) LIMIT 100[39m
+[34m2024-11-06 12:23:20[39m [32m[ INFO][39m [33mResult: 14 rows retrieved in 4ms[39m
+[34m2024-11-06 16:12:48[39m [32m[ INFO][39m [33mExecuting: USE wild_db_quests_advanced[39m
+[34m2024-11-06 16:12:48[39m [32m[ INFO][39m [33mResult: 0 rows affected in 17ms[39m
+[34m2024-11-06 16:12:57[39m [32m[ INFO][39m [33mExecuting: USE wild_db_quests_advanced[39m
+[34m2024-11-06 16:12:57[39m [32m[ INFO][39m [33mResult: 0 rows affected in 2ms[39m
+[34m2024-11-06 16:12:58[39m [32m[ INFO][39m [33mExecuting: USE wild_db_quests_advanced[39m
+[34m2024-11-06 16:12:58[39m [32m[ INFO][39m [33mResult: 0 rows affected in 2ms[39m
+[34m2024-11-06 16:13:14[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE school(   id INT NOT NULL AUTO_INCREMENT,   name VARCHAR(100) NOT NULL,   capacity INT,   PRIMARY KEY (id) )[39m
+[34m2024-11-06 16:13:14[39m [32m[ INFO][39m [33mResult: 0 rows affected in 27ms[39m
+[34m2024-11-06 16:13:43[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE wizard(   id INT NOT NULL AUTO_INCREMENT,   firstname VARCHAR(100) NOT NULL,   lastname VARCHAR(100) NOT NULL,   school_id INT,   PRIMARY KEY (id),   CONSTRAINT fk_wizard_school FOREIGN KEY (school_id) REFERENCES school(id) )[39m
+[34m2024-11-06 16:13:43[39m [32m[ INFO][39m [33mResult: 0 rows affected in 60ms[39m
+[34m2024-11-06 16:15:30[39m [32m[ INFO][39m [33mExecuting: INSERT INTO school   (id, name, capacity)   VALUES   (1, 'Beauxbatons Academy of Magic', 550),   (2, 'Castelobruxo', 380),   (3, 'Durmstrang Institute', 570),   (4, 'Hogwarts School of Witchcraft and Wizardry', 450),   (5, 'Ilvermorny School of Witchcraft and Wizar', 300),   (6, 'Koldovstoretz', 125),   (7, 'Mahoutokoro School of Magic', 800),   (8, 'Uagadou School of Magic', 350)[39m
+[34m2024-11-06 16:15:30[39m [32m[ INFO][39m [33mResult: 8 rows affected in 7ms[39m
+[34m2024-11-06 16:15:31[39m [32m[ INFO][39m [33mExecuting: INSERT INTO wizard   (firstname, lastname, school_id)   VALUES   ('fleur', 'delacour', 1),   ('gabrielle', 'delacour', 1),   ('viktor', 'krum', 3),   ('gellert', 'grindelwald', 3),   ('harry', 'potter', 4),   ('hermione', 'granger', 4),   ('lily', 'potter', 4),   ('ron', 'weasley', 4),   ('ginny', 'weasley', 4),   ('fred', 'weasley', 4),   ('george', 'weasley', 4),   ('arthur', 'weasley', 4),   ('molly', 'weasley', 4),   ('drago', 'malefoy', 4),   ('albus', 'dumbledore', 4),   ('severus', 'rogue', 4),   ('tom', 'jédusor', 4),   ('dudley', 'dursley', 4),   ('babajide', 'akingbade', 8),   ('dudley', 'dursley', NULL)[39m
+[34m2024-11-06 16:15:31[39m [32m[ INFO][39m [33mResult: 20 rows affected in 22ms[39m
+[34m2024-11-06 16:16:01[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM school,wizard LIMIT 100[39m
+[34m2024-11-06 16:16:01[39m [32m[ INFO][39m [33mResult: 100 rows retrieved in 5ms[39m
+[34m2024-11-06 16:16:24[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM school LIMIT 100[39m
+[34m2024-11-06 16:16:24[39m [32m[ INFO][39m [33mResult: 8 rows retrieved in 3ms[39m
+[34m2024-11-06 16:16:35[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard LIMIT 100[39m
+[34m2024-11-06 16:16:35[39m [32m[ INFO][39m [33mResult: 20 rows retrieved in 2ms[39m
+[34m2024-11-06 16:18:45[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM wizard LIMIT 100[39m
+[34m2024-11-06 16:18:45[39m [32m[ INFO][39m [33mResult: 20 rows retrieved in 3ms[39m
+[34m2024-11-06 16:19:12[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, oui FROM wizard LIMIT 100[39m
+[34m2024-11-06 16:19:12[39m [32m[ERROR][39m [31mUnknown column 'oui' in 'field list'[39m
+[34m2024-11-06 16:19:16[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, name FROM wizard LIMIT 100[39m
+[34m2024-11-06 16:19:16[39m [32m[ERROR][39m [31mUnknown column 'name' in 'field list'[39m
+[34m2024-11-06 16:19:20[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM wizard LIMIT 100[39m
+[34m2024-11-06 16:19:20[39m [32m[ INFO][39m [33mResult: 20 rows retrieved in 2ms[39m
+[34m2024-11-06 16:19:44[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, name FROM wizard INNER JOIN school ON school.id=wizard.school_id LIMIT 100[39m
+[34m2024-11-06 16:19:44[39m [32m[ INFO][39m [33mResult: 19 rows retrieved in 3ms[39m
+[34m2024-11-06 16:21:02[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM wizard INNER JOIN school ON school.id=wizard.school_id LIMIT 100[39m
+[34m2024-11-06 16:21:02[39m [32m[ INFO][39m [33mResult: 19 rows retrieved in 3ms[39m
+[34m2024-11-06 16:21:20[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, ok FROM wizard INNER JOIN school ON school.id=wizard.school_id LIMIT 100[39m
+[34m2024-11-06 16:21:20[39m [32m[ERROR][39m [31mUnknown column 'ok' in 'field list'[39m
+[34m2024-11-06 16:21:40[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, ok FROM wizard INNER JOIN school ON school.id=wizard.school_id LIMIT 100[39m
+[34m2024-11-06 16:21:40[39m [32m[ERROR][39m [31mUnknown column 'ok' in 'field list'[39m
+[34m2024-11-06 16:21:49[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, nom FROM wizard INNER JOIN school ON school.id=wizard.school_id LIMIT 100[39m
+[34m2024-11-06 16:21:49[39m [32m[ERROR][39m [31mUnknown column 'nom' in 'field list'[39m
+[34m2024-11-06 16:21:52[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, name FROM wizard INNER JOIN school ON school.id=wizard.school_id LIMIT 100[39m
+[34m2024-11-06 16:21:52[39m [32m[ INFO][39m [33mResult: 19 rows retrieved in 3ms[39m
+[34m2024-11-06 16:22:09[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, capacity FROM wizard INNER JOIN school ON school.id=wizard.school_id LIMIT 100[39m
+[34m2024-11-06 16:22:09[39m [32m[ INFO][39m [33mResult: 19 rows retrieved in 3ms[39m
+[34m2024-11-06 16:24:57[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, name FROM wizard INNER JOIN school ON school.id=wizard.school_id LIMIT 100[39m
+[34m2024-11-06 16:24:57[39m [32m[ INFO][39m [33mResult: 19 rows retrieved in 3ms[39m
+[34m2024-11-06 16:25:04[39m [32m[ INFO][39m [33mExecuting: INSERT INTO wizard   (firstname, lastname, school_id)   VALUES   ('fleur', 'delacour', 1),   ('gabrielle', 'delacour', 1),   ('viktor', 'krum', 3),   ('gellert', 'grindelwald', 3),   ('harry', 'potter', 4),   ('hermione', 'granger', 4),   ('lily', 'potter', 4),   ('ron', 'weasley', 4),   ('ginny', 'weasley', 4),   ('fred', 'weasley', 4),   ('george', 'weasley', 4),   ('arthur', 'weasley', 4),   ('molly', 'weasley', 4),   ('drago', 'malefoy', 4),   ('albus', 'dumbledore', 4),   ('severus', 'rogue', 4),   ('tom', 'jédusor', 4),   ('dudley', 'dursley', 4),   ('babajide', 'akingbade', 8),   ('dudley', 'dursley', NULL)[39m
+[34m2024-11-06 16:25:04[39m [32m[ INFO][39m [33mResult: 20 rows affected in 20ms[39m
+[34m2024-11-06 16:30:38[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, name FROM wizard INNER JOIN school ON school.id=wizard.school_id LIMIT 100[39m
+[34m2024-11-06 16:30:38[39m [32m[ INFO][39m [33mResult: 38 rows retrieved in 5ms[39m
+[34m2024-11-06 16:31:37[39m [32m[ INFO][39m [33mExecuting: SELECT w.firstname, w.lastname, s.name as school_name FROM wizard AS w LEFT JOIN school AS s ON s.id=w.school_id LIMIT 100[39m
+[34m2024-11-06 16:31:37[39m [32m[ INFO][39m [33mResult: 40 rows retrieved in 4ms[39m
+[34m2024-11-06 16:32:28[39m [32m[ INFO][39m [33mExecuting: SELECT w.firstname, w.lastname, s.name as school_name FROM wizard AS w RIGHT JOIN school AS s ON s.id=w.school_id LIMIT 100[39m
+[34m2024-11-06 16:32:28[39m [32m[ INFO][39m [33mResult: 42 rows retrieved in 4ms[39m
+[34m2024-11-06 16:49:09[39m [32m[ INFO][39m [33mExecuting: DROP DATABASE IF EXISTS wild_db_quests_advanced[39m
+[34m2024-11-06 16:49:09[39m [32m[ INFO][39m [33mResult: 2 rows affected in 50ms[39m
+[34m2024-11-06 16:49:10[39m [32m[ INFO][39m [33mExecuting: CREATE DATABASE wild_db_quests_advanced[39m
+[34m2024-11-06 16:49:10[39m [32m[ INFO][39m [33mResult: 1 rows affected in 6ms[39m
+[34m2024-11-06 16:49:12[39m [32m[ INFO][39m [33mExecuting: USE wild_db_quests_advanced[39m
+[34m2024-11-06 16:49:12[39m [32m[ INFO][39m [33mResult: 0 rows affected in 2ms[39m
+[34m2024-11-06 16:49:14[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE wizard(   id INT NOT NULL AUTO_INCREMENT,   firstname VARCHAR(100) NOT NULL,   lastname VARCHAR(100) NOT NULL,   PRIMARY KEY (id) )[39m
+[34m2024-11-06 16:49:15[39m [32m[ INFO][39m [33mResult: 0 rows affected in 19ms[39m
+[34m2024-11-06 16:49:33[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE wizard(   id INT NOT NULL AUTO_INCREMENT,   firstname VARCHAR(100) NOT NULL,   lastname VARCHAR(100) NOT NULL,   PRIMARY KEY (id) )[39m
+[34m2024-11-06 16:49:33[39m [32m[ERROR][39m [31mTable 'wizard' already exists[39m
+[34m2024-11-06 16:50:28[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE team(   id INT NOT NULL AUTO_INCREMENT,   name VARCHAR(80 NOT NULL),   PRIMARY KEY (id)     )[39m
+[34m2024-11-06 16:50:28[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NOT NULL),[39m
+[31m  PRIMARY KEY (id)    [39m
+[31m)' at line 3[39m
+[34m2024-11-06 16:50:36[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE team(   id INT NOT NULL AUTO_INCREMENT,   name VARCHAR(80) NOT NULL,   PRIMARY KEY (id)     )[39m
+[34m2024-11-06 16:50:36[39m [32m[ INFO][39m [33mResult: 0 rows affected in 34ms[39m
+[34m2024-11-06 16:50:50[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE team(   id INT NOT NULL AUTO_INCREMENT,   name VARCHAR(80) NOT NULL,   PRIMARY KEY (id)     )[39m
+[34m2024-11-06 16:50:50[39m [32m[ERROR][39m [31mTable 'team' already exists[39m
+[34m2024-11-06 16:50:50[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE team(   id INT NOT NULL AUTO_INCREMENT,   name VARCHAR(80) NOT NULL,   PRIMARY KEY (id)     )[39m
+[34m2024-11-06 16:50:50[39m [32m[ERROR][39m [31mTable 'team' already exists[39m
+[34m2024-11-06 16:53:36[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE player(   id INT NOT NULL AUTO_INCREMENT,   `role` VARCHAR(50),   enrollment_date DATE DEFAULT NULL )[39m
+[34m2024-11-06 16:53:36[39m [32m[ERROR][39m [31mIncorrect table definition; there can be only one auto column and it must be defined as a key[39m
+[34m2024-11-06 16:54:04[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE player(   id INT NOT NULL AUTO_INCREMENT,   PRIMARY KEY (id),   `role` VARCHAR(50),   enrollment_date DATE DEFAULT NULL )[39m
+[34m2024-11-06 16:54:04[39m [32m[ INFO][39m [33mResult: 0 rows affected in 40ms[39m
+[34m2024-11-06 16:55:17[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE player(   id INT NOT NULL AUTO_INCREMENT,   PRIMARY KEY (id),   `role` VARCHAR(50),   enrollment_date DATE DEFAULT NULL,   wizard_id INT NOT NULL,   team_id INT NULL,   CONSTRAINT fk_player_wizard FOREIGN KEY (wizard_id) REFERENCES wizard(id),   CONSTRAINT fk_player_team FOREIGN KEY (team_id) REFERENCES team(id)  )[39m
+[34m2024-11-06 16:55:17[39m [32m[ERROR][39m [31mTable 'player' already exists[39m
+[34m2024-11-06 16:55:57[39m [32m[ INFO][39m [33mExecuting: DROP TABLE player[39m
+[34m2024-11-06 16:55:57[39m [32m[ INFO][39m [33mResult: 0 rows affected in 32ms[39m
+[34m2024-11-06 16:56:04[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE player(   id INT NOT NULL AUTO_INCREMENT,   PRIMARY KEY (id),   `role` VARCHAR(50),   enrollment_date DATE DEFAULT NULL,   wizard_id INT NOT NULL,   team_id INT NULL,   CONSTRAINT fk_player_wizard FOREIGN KEY (wizard_id) REFERENCES wizard(id),   CONSTRAINT fk_player_team FOREIGN KEY (team_id) REFERENCES team(id)  )[39m
+[34m2024-11-06 16:56:04[39m [32m[ INFO][39m [33mResult: 0 rows affected in 70ms[39m
+[34m2024-11-06 16:58:16[39m [32m[ INFO][39m [33mExecuting: INSERT INTO player   (id, wizard_id, team_id, role, enrollment_date)   VALUES   (1, 1, 4, 'beater', '1995-10-09'), (2, 2, 1, 'chaser', '1995-08-17'), (3, 3, 1, 'seeker', '1994-12-03'), (4, 4, 3, 'chaser', '1995-03-24'), (5, 5, 3, 'keeper', '1997-07-16'), (6, 6, 1, 'beater', '1994-01-10'), (7, 7, 4, 'chaser', '1999-01-21'), (8, 8, 4, 'keeper', '1991-10-20'), (10, 10, 1, 'beater', '1991-08-03'), (11, 11, 3, 'beater', '1996-10-04'), (12, 12, 2, 'chaser', '1992-01-27'), (13, 13, 2, 'beater', '1991-01-11'), (14, 14, 2, 'seeker', '1995-08-17'), (16, 16, 3, 'beater', '1992-11-27'), (17, 17, 1, 'seeker', '1993-07-07'), (18, 18, 1, 'keeper', '1991-05-01'), (19, 19, 4, 'keeper', '1997-11-02'), (20, 20, 1, 'keeper', '1995-04-24'), (21, 21, 1, 'chaser', '1991-03-12'), (22, 22, 2, 'chaser', '1990-07-05'), (23, 23, 4, 'beater', '1995-01-06'), (24, 24, 1, 'beater', '1997-02-08'), (25, 25, 3, 'beater', '1996-12-16'), (26, 26, 2, 'chaser', '1997-02-07'), (27, 27, 2, 'chaser', '1999-07-31'), (28, 28, 3, 'seeker', '1994-05-13'), (29, 29, 1, 'chaser', '1997-08-14'), (30, 30, 1, 'seeker', '1993-08-30'), (31, 31, 1, 'beater', '1994-11-16'), (32, 32, 4, 'seeker', '1992-08-14'), (33, 33, 1, 'keeper', '1995-12-02'), (34, 34, 1, 'chaser', '1996-01-31'), (35, 35, 3, 'chaser', '1992-03-21'), (36, 36, 3, 'seeker', '1997-10-30'), (37, 37, 3, 'chaser', '1991-04-27'), (38, 38, 2, 'chaser', '1998-04-05'), (39, 39, 1, 'beater', '1992-02-17'), (40, 40, 1, 'chaser', '1995-10-15'), (41, 41, 1, 'chaser', '1999-10-25'), (42, 42, 1, 'chaser', '1998-05-06'), (43, 43, 2, 'chaser', '1998-03-01'), (44, 44, 2, 'chaser', '1991-03-11'), (46, 46, 3, 'chaser', '1993-11-02'), (47, 47, 3, 'chaser', '1992-03-12'), (48, 48, 3, 'seeker', '1993-03-17'), (49, 49, 1, 'beater', '1992-07-14'), (50, 50, 3, 'chaser', '1996-12-02'), (51, 51, 2, 'chaser', '1995-06-25'), (52, 52, 3, 'beater', '1991-12-14'), (55, 55, 1, 'chaser', '1991-05-14'), (56, 56, 1, 'beater', '1997-03-05'), (57, 57, 1, 'beater', '1996-12-07'), (58, 58, 1, 'chaser', '1999-02-23'), (59, 59, 2, 'beater', '1995-09-23'), (60, 60, 2, 'beater', '1992-04-12'), (61, 61, 2, 'seeker', '1992-10-09'), (62, 62, 3, 'chaser', '1990-02-27'), (64, 64, 4, 'chaser', '1999-01-12'), (66, 66, 3, 'seeker', '1991-02-23'), (67, 67, 4, 'beater', '1996-07-18'), (68, 68, 4, 'keeper', '1993-10-01'), (69, 69, 3, 'beater', '1997-03-06'), (70, 70, 1, 'chaser', '1995-11-08'), (71, 71, 4, 'beater', '1998-06-12'), (72, 72, 1, 'beater', '1997-11-23'), (73, 73, 3, 'chaser', '1994-01-28'), (74, 74, 4, 'beater', '1999-11-25'), (75, 75, 2, 'seeker', '1991-12-28'), (76, 76, 3, 'seeker', '1993-10-23'), (77, 77, 1, 'seeker', '1990-07-31'), (78, 78, 1, 'beater', '1992-01-01'), (79, 79, 1, 'seeker', '1991-04-27'), (81, 81, 1, 'seeker', '1998-03-29'), (82, 82, 1, 'chaser', '1991-08-26'), (83, 83, 1, 'keeper', '1992-04-17'), (85, 85, 1, 'beater', '1990-09-05'), (86, 86, 1, 'seeker', '1997-06-22'), (87, 87, 1, 'chaser', '1999-04-08'), (88, 88, 3, 'beater', '1991-07-08'), (89, 89, 3, 'chaser', '1996-09-25'), (90, 90, 1, 'keeper', '1993-01-04'), (91, 91, 4, 'beater', '1993-11-04'), (92, 92, 2, 'beater', '1997-12-14')[39m
+[34m2024-11-06 16:58:16[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quests_advanced`.`player`, CONSTRAINT `fk_player_wizard` FOREIGN KEY (`wizard_id`) REFERENCES `wizard` (`id`))[39m
+[34m2024-11-06 17:00:58[39m [32m[ INFO][39m [33mExecuting: INSERT INTO wizard   (id, firstname, lastname)   VALUES   (1, 'Hannah', 'Abbott'), (2, 'Katie', 'Bell'), (3, 'Cuthbert', 'Binns'), (4, 'Phineas', 'Nigellus'), (5, 'Regulus', 'Black'), (6, 'Sirius', 'Black'), (7, 'Amelia', 'Bones'), (8, 'Susan', 'Bones'), (9, 'Terry', 'Boot'), (10, 'Lavender', 'Brown'), (11, 'Millicent', 'Bulstrode'), (12, 'Cho', 'Chang'), (13, 'Penelope', 'Clearwater'), (14, 'Michael', 'Corner'), (15, 'Crabbe', ''), (16, 'Vincent', 'Crabbe'), (17, 'Colin', 'Creevey'), (18, 'Dennis', 'Creevey'), (19, 'Cedric', 'Diggory'), (20, 'Aberforth', 'Dumbledore'), (21, 'Albus', 'Dumbledore'), (22, 'Marietta', 'Edgecombe'), (23, 'Justin', 'Finch-Fletchley'), (24, 'Seamus', 'Finnigan'), (25, 'Marcus', 'Flint'), (26, 'Filius', 'Flitwick'), (27, 'Anthony', 'Goldstein'), (28, 'Gregory', 'Goyle'), (29, 'Hermione', 'Granger'), (30, 'Godric', 'Gryffindor'), (31, 'Rubeus', 'Hagrid'), (32, 'Helga', 'Hufflepuff'), (33, 'Angelina', 'Johnson'), (34, 'Lee', 'Jordan'), (35, 'Bellatrix', 'Lestrange'), (36, 'Rabastan', 'Lestrange'), (37, 'Rodolphus', 'Lestrange'), (38, 'Gilderoy', 'Lockhart'), (39, 'Alice', 'Longbottom'), (40, 'Frank', 'Longbottom'), (41, 'Augusta', 'Longbottom'), (42, 'Neville', 'Longbottom'), (43, 'Luna', 'Lovegood'), (44, 'Xenophilius', 'Lovegood'), (45, 'Remus', 'Lupin'), (46, 'Draco', 'Malfoy'), (47, 'Lucius', 'Malfoy'), (48, 'Narcissa', 'Malfoy'), (49, 'Minerva', 'McGonagall'), (50, 'Theodore', 'Nott'), (51, 'Garrick', 'Ollivander'), (52, 'Pansy', 'Parkinson'), (53, 'Padma', 'Patil'), (54, 'Parvati', 'Patil'), (55, 'Peter', 'Pettigrew'), (56, 'Harry', 'Potter'), (57, 'James', 'Potter'), (58, 'Lily', 'J.'), (59, 'Quirinus', 'Quirrell'), (60, 'Helena', 'Ravenclaw'), (61, 'Rowena', 'Ravenclaw'), (62, 'Tom', 'Riddle'), (63, 'Demelza', 'Robins'), (64, 'Newton', 'Scamander'), (65, 'Horace', 'Slughorn'), (66, 'Salazar', 'Slytherin'), (67, 'Hepzibah', 'Smith'), (68, 'Zacharias', 'Smith'), (69, 'Severus', 'Snape'), (70, 'Alicia', 'Spinnet'), (71, 'Pomona', 'Sprout'), (72, 'Dean', 'Thomas'), (73, 'Andromeda', 'Tonks'), (74, 'Nymphadora', 'Tonks'), (75, 'Sybill', 'Trelawney'), (76, 'Dolores', 'Umbridge'), (77, 'Romilda', 'Vane'), (78, 'Arthur', 'Weasley'), (79, 'William', 'Weasley'), (80, 'Charles', 'Weasley'), (81, 'Fred', 'Weasley'), (82, 'George', 'Weasley'), (83, 'Ginevra', 'Weasley'), (84, 'Molly', 'Weasley'), (85, 'Percy', 'Weasley'), (86, 'Ronald', 'Weasley'), (87, 'Oliver', 'Wood'), (88, 'Blaise', 'Zabini'), (89, 'Bloody', 'Baron'), (90, 'Cadogan', ''), (91, 'Fat', 'Friar'), (92, 'Myrtle', 'Warren')[39m
+[34m2024-11-06 17:00:58[39m [32m[ INFO][39m [33mResult: 92 rows affected in 32ms[39m
+[34m2024-11-06 17:01:01[39m [32m[ INFO][39m [33mExecuting: INSERT INTO player   (id, wizard_id, team_id, role, enrollment_date)   VALUES   (1, 1, 4, 'beater', '1995-10-09'), (2, 2, 1, 'chaser', '1995-08-17'), (3, 3, 1, 'seeker', '1994-12-03'), (4, 4, 3, 'chaser', '1995-03-24'), (5, 5, 3, 'keeper', '1997-07-16'), (6, 6, 1, 'beater', '1994-01-10'), (7, 7, 4, 'chaser', '1999-01-21'), (8, 8, 4, 'keeper', '1991-10-20'), (10, 10, 1, 'beater', '1991-08-03'), (11, 11, 3, 'beater', '1996-10-04'), (12, 12, 2, 'chaser', '1992-01-27'), (13, 13, 2, 'beater', '1991-01-11'), (14, 14, 2, 'seeker', '1995-08-17'), (16, 16, 3, 'beater', '1992-11-27'), (17, 17, 1, 'seeker', '1993-07-07'), (18, 18, 1, 'keeper', '1991-05-01'), (19, 19, 4, 'keeper', '1997-11-02'), (20, 20, 1, 'keeper', '1995-04-24'), (21, 21, 1, 'chaser', '1991-03-12'), (22, 22, 2, 'chaser', '1990-07-05'), (23, 23, 4, 'beater', '1995-01-06'), (24, 24, 1, 'beater', '1997-02-08'), (25, 25, 3, 'beater', '1996-12-16'), (26, 26, 2, 'chaser', '1997-02-07'), (27, 27, 2, 'chaser', '1999-07-31'), (28, 28, 3, 'seeker', '1994-05-13'), (29, 29, 1, 'chaser', '1997-08-14'), (30, 30, 1, 'seeker', '1993-08-30'), (31, 31, 1, 'beater', '1994-11-16'), (32, 32, 4, 'seeker', '1992-08-14'), (33, 33, 1, 'keeper', '1995-12-02'), (34, 34, 1, 'chaser', '1996-01-31'), (35, 35, 3, 'chaser', '1992-03-21'), (36, 36, 3, 'seeker', '1997-10-30'), (37, 37, 3, 'chaser', '1991-04-27'), (38, 38, 2, 'chaser', '1998-04-05'), (39, 39, 1, 'beater', '1992-02-17'), (40, 40, 1, 'chaser', '1995-10-15'), (41, 41, 1, 'chaser', '1999-10-25'), (42, 42, 1, 'chaser', '1998-05-06'), (43, 43, 2, 'chaser', '1998-03-01'), (44, 44, 2, 'chaser', '1991-03-11'), (46, 46, 3, 'chaser', '1993-11-02'), (47, 47, 3, 'chaser', '1992-03-12'), (48, 48, 3, 'seeker', '1993-03-17'), (49, 49, 1, 'beater', '1992-07-14'), (50, 50, 3, 'chaser', '1996-12-02'), (51, 51, 2, 'chaser', '1995-06-25'), (52, 52, 3, 'beater', '1991-12-14'), (55, 55, 1, 'chaser', '1991-05-14'), (56, 56, 1, 'beater', '1997-03-05'), (57, 57, 1, 'beater', '1996-12-07'), (58, 58, 1, 'chaser', '1999-02-23'), (59, 59, 2, 'beater', '1995-09-23'), (60, 60, 2, 'beater', '1992-04-12'), (61, 61, 2, 'seeker', '1992-10-09'), (62, 62, 3, 'chaser', '1990-02-27'), (64, 64, 4, 'chaser', '1999-01-12'), (66, 66, 3, 'seeker', '1991-02-23'), (67, 67, 4, 'beater', '1996-07-18'), (68, 68, 4, 'keeper', '1993-10-01'), (69, 69, 3, 'beater', '1997-03-06'), (70, 70, 1, 'chaser', '1995-11-08'), (71, 71, 4, 'beater', '1998-06-12'), (72, 72, 1, 'beater', '1997-11-23'), (73, 73, 3, 'chaser', '1994-01-28'), (74, 74, 4, 'beater', '1999-11-25'), (75, 75, 2, 'seeker', '1991-12-28'), (76, 76, 3, 'seeker', '1993-10-23'), (77, 77, 1, 'seeker', '1990-07-31'), (78, 78, 1, 'beater', '1992-01-01'), (79, 79, 1, 'seeker', '1991-04-27'), (81, 81, 1, 'seeker', '1998-03-29'), (82, 82, 1, 'chaser', '1991-08-26'), (83, 83, 1, 'keeper', '1992-04-17'), (85, 85, 1, 'beater', '1990-09-05'), (86, 86, 1, 'seeker', '1997-06-22'), (87, 87, 1, 'chaser', '1999-04-08'), (88, 88, 3, 'beater', '1991-07-08'), (89, 89, 3, 'chaser', '1996-09-25'), (90, 90, 1, 'keeper', '1993-01-04'), (91, 91, 4, 'beater', '1993-11-04'), (92, 92, 2, 'beater', '1997-12-14')[39m
+[34m2024-11-06 17:01:01[39m [32m[ERROR][39m [31mCannot add or update a child row: a foreign key constraint fails (`wild_db_quests_advanced`.`player`, CONSTRAINT `fk_player_team` FOREIGN KEY (`team_id`) REFERENCES `team` (`id`))[39m
+[34m2024-11-06 17:01:04[39m [32m[ INFO][39m [33mExecuting: INSERT INTO team   (id, name)   VALUES   (1, 'Gryffindor'), (2, 'Ravenclaw'), (3, 'Slytherin'), (4, 'Hufflepuff')[39m
+[34m2024-11-06 17:01:04[39m [32m[ INFO][39m [33mResult: 4 rows affected in 9ms[39m
+[34m2024-11-06 17:01:06[39m [32m[ INFO][39m [33mExecuting: INSERT INTO player   (id, wizard_id, team_id, role, enrollment_date)   VALUES   (1, 1, 4, 'beater', '1995-10-09'), (2, 2, 1, 'chaser', '1995-08-17'), (3, 3, 1, 'seeker', '1994-12-03'), (4, 4, 3, 'chaser', '1995-03-24'), (5, 5, 3, 'keeper', '1997-07-16'), (6, 6, 1, 'beater', '1994-01-10'), (7, 7, 4, 'chaser', '1999-01-21'), (8, 8, 4, 'keeper', '1991-10-20'), (10, 10, 1, 'beater', '1991-08-03'), (11, 11, 3, 'beater', '1996-10-04'), (12, 12, 2, 'chaser', '1992-01-27'), (13, 13, 2, 'beater', '1991-01-11'), (14, 14, 2, 'seeker', '1995-08-17'), (16, 16, 3, 'beater', '1992-11-27'), (17, 17, 1, 'seeker', '1993-07-07'), (18, 18, 1, 'keeper', '1991-05-01'), (19, 19, 4, 'keeper', '1997-11-02'), (20, 20, 1, 'keeper', '1995-04-24'), (21, 21, 1, 'chaser', '1991-03-12'), (22, 22, 2, 'chaser', '1990-07-05'), (23, 23, 4, 'beater', '1995-01-06'), (24, 24, 1, 'beater', '1997-02-08'), (25, 25, 3, 'beater', '1996-12-16'), (26, 26, 2, 'chaser', '1997-02-07'), (27, 27, 2, 'chaser', '1999-07-31'), (28, 28, 3, 'seeker', '1994-05-13'), (29, 29, 1, 'chaser', '1997-08-14'), (30, 30, 1, 'seeker', '1993-08-30'), (31, 31, 1, 'beater', '1994-11-16'), (32, 32, 4, 'seeker', '1992-08-14'), (33, 33, 1, 'keeper', '1995-12-02'), (34, 34, 1, 'chaser', '1996-01-31'), (35, 35, 3, 'chaser', '1992-03-21'), (36, 36, 3, 'seeker', '1997-10-30'), (37, 37, 3, 'chaser', '1991-04-27'), (38, 38, 2, 'chaser', '1998-04-05'), (39, 39, 1, 'beater', '1992-02-17'), (40, 40, 1, 'chaser', '1995-10-15'), (41, 41, 1, 'chaser', '1999-10-25'), (42, 42, 1, 'chaser', '1998-05-06'), (43, 43, 2, 'chaser', '1998-03-01'), (44, 44, 2, 'chaser', '1991-03-11'), (46, 46, 3, 'chaser', '1993-11-02'), (47, 47, 3, 'chaser', '1992-03-12'), (48, 48, 3, 'seeker', '1993-03-17'), (49, 49, 1, 'beater', '1992-07-14'), (50, 50, 3, 'chaser', '1996-12-02'), (51, 51, 2, 'chaser', '1995-06-25'), (52, 52, 3, 'beater', '1991-12-14'), (55, 55, 1, 'chaser', '1991-05-14'), (56, 56, 1, 'beater', '1997-03-05'), (57, 57, 1, 'beater', '1996-12-07'), (58, 58, 1, 'chaser', '1999-02-23'), (59, 59, 2, 'beater', '1995-09-23'), (60, 60, 2, 'beater', '1992-04-12'), (61, 61, 2, 'seeker', '1992-10-09'), (62, 62, 3, 'chaser', '1990-02-27'), (64, 64, 4, 'chaser', '1999-01-12'), (66, 66, 3, 'seeker', '1991-02-23'), (67, 67, 4, 'beater', '1996-07-18'), (68, 68, 4, 'keeper', '1993-10-01'), (69, 69, 3, 'beater', '1997-03-06'), (70, 70, 1, 'chaser', '1995-11-08'), (71, 71, 4, 'beater', '1998-06-12'), (72, 72, 1, 'beater', '1997-11-23'), (73, 73, 3, 'chaser', '1994-01-28'), (74, 74, 4, 'beater', '1999-11-25'), (75, 75, 2, 'seeker', '1991-12-28'), (76, 76, 3, 'seeker', '1993-10-23'), (77, 77, 1, 'seeker', '1990-07-31'), (78, 78, 1, 'beater', '1992-01-01'), (79, 79, 1, 'seeker', '1991-04-27'), (81, 81, 1, 'seeker', '1998-03-29'), (82, 82, 1, 'chaser', '1991-08-26'), (83, 83, 1, 'keeper', '1992-04-17'), (85, 85, 1, 'beater', '1990-09-05'), (86, 86, 1, 'seeker', '1997-06-22'), (87, 87, 1, 'chaser', '1999-04-08'), (88, 88, 3, 'beater', '1991-07-08'), (89, 89, 3, 'chaser', '1996-09-25'), (90, 90, 1, 'keeper', '1993-01-04'), (91, 91, 4, 'beater', '1993-11-04'), (92, 92, 2, 'beater', '1997-12-14')[39m
+[34m2024-11-06 17:01:06[39m [32m[ INFO][39m [33mResult: 83 rows affected in 34ms[39m
+[34m2024-11-06 17:01:40[39m [32m[ INFO][39m [33mExecuting: SELECT * FROM player LIMIT 100[39m
+[34m2024-11-06 17:01:40[39m [32m[ INFO][39m [33mResult: 83 rows retrieved in 6ms[39m
+[34m2024-11-06 17:12:08[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, role, name FROM player INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.wizard_id LIMIT 100[39m
+[34m2024-11-06 17:12:08[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 9ms[39m
+[34m2024-11-06 17:14:06[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, role, name FROM player INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.wizard_id ORDER BY name ASC, role, lastname, firstname LIMIT 100[39m
+[34m2024-11-06 17:14:06[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 6ms[39m
+[34m2024-11-06 17:15:36[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, role, name FROM player INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.wizard_id ORDER BY name ASC, role, lastname, firstname LIMIT 100[39m
+[34m2024-11-06 17:15:36[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 11ms[39m
+[34m2024-11-06 17:17:40[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, role, name FROM player INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=team.wizard_id ORDER BY name ASC, role, lastname, firstname LIMIT 100[39m
+[34m2024-11-06 17:17:40[39m [32m[ERROR][39m [31mUnknown column 'team.wizard_id' in 'on clause'[39m
+[34m2024-11-06 17:18:57[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, role, name FROM player INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id ORDER BY name ASC, role, lastname, firstname LIMIT 100[39m
+[34m2024-11-06 17:18:57[39m [32m[ INFO][39m [33mResult: 83 rows retrieved in 10ms[39m
+[34m2024-11-06 17:21:46[39m [32m[ INFO][39m [33mExecuting: SELECT lastname, firstname, role, name FROM player INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id ORDER BY name ASC, role, lastname, firstname LIMIT 100[39m
+[34m2024-11-06 17:21:46[39m [32m[ INFO][39m [33mResult: 83 rows retrieved in 8ms[39m
+[34m2024-11-06 17:22:37[39m [32m[ INFO][39m [33mExecuting: SELECT lastname, firstname, role, name FROM player INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id ORDER BY name ASC, role ASC, lastname ASC, firstname ASC LIMIT 100[39m
+[34m2024-11-06 17:22:37[39m [32m[ INFO][39m [33mResult: 83 rows retrieved in 9ms[39m
+[34m2024-11-06 17:23:00[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM player WHERE role='seeker' INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id ORDER BY lastname ASC, firstname ASC LIMIT 100[39m
+[34m2024-11-06 17:23:00[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN wizard ON wizard.id=player.wizard_id[39m
+[31mINNER JOIN team ON team.id=playe' at line 4[39m
+[34m2024-11-06 17:23:42[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM player WHERE role='seeker' INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id, ORDER BY lastname ASC, firstname ASC LIMIT 100[39m
+[34m2024-11-06 17:23:42[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN wizard ON wizard.id=player.wizard_id[39m
+[31mINNER JOIN team ON team.id=playe' at line 4[39m
+[34m2024-11-06 17:23:58[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM player WHERE role='seeker' AND INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id ORDER BY lastname ASC, firstname ASC LIMIT 100[39m
+[34m2024-11-06 17:23:58[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN wizard ON wizard.id=player.wizard_id[39m
+[31mINNER JOIN team ON team.id=playe' at line 4[39m
+[34m2024-11-06 17:24:23[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM player WHERE role='seeker'  INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id ORDER BY lastname ASC, firstname ASC LIMIT 100[39m
+[34m2024-11-06 17:24:23[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN wizard ON wizard.id=player.wizard_id[39m
+[31mINNER JOIN team ON team.id=playe' at line 3[39m
+[34m2024-11-06 17:24:33[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM player INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id ORDER BY lastname ASC, firstname ASC LIMIT 100[39m
+[34m2024-11-06 17:24:33[39m [32m[ INFO][39m [33mResult: 83 rows retrieved in 10ms[39m
+[34m2024-11-06 17:24:52[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM player INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id ORDER BY lastname ASC, firstname ASC WHERE role='seeker' LIMIT 100[39m
+[34m2024-11-06 17:24:52[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE role='seeker' LIMIT 100' at line 5[39m
+[34m2024-11-06 17:25:01[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM player INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id WHERE role='seeker' ORDER BY lastname ASC, firstname ASC LIMIT 100[39m
+[34m2024-11-06 17:25:01[39m [32m[ INFO][39m [33mResult: 16 rows retrieved in 9ms[39m
+[34m2024-11-06 17:26:24[39m [32m[ INFO][39m [33mExecuting: SELECT player[39m
+[34m2024-11-06 17:26:24[39m [32m[ERROR][39m [31mUnknown column 'player' in 'field list'[39m
+[34m2024-11-06 17:26:24[39m [32m[ INFO][39m [33mExecuting: SELECT player[39m
+[34m2024-11-06 17:26:24[39m [32m[ERROR][39m [31mUnknown column 'player' in 'field list'[39m
+[34m2024-11-06 17:27:21[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM player   INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id WHERE team.id=NULL LIMIT 100[39m
+[34m2024-11-06 17:27:21[39m [32m[ INFO][39m [33mResult: Empty set in 19ms[39m
+[34m2024-11-06 17:27:23[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM player   INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id WHERE team.id=NULL LIMIT 100[39m
+[34m2024-11-06 17:27:23[39m [32m[ INFO][39m [33mResult: Empty set in 7ms[39m
+[34m2024-11-06 17:28:05[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM player   INNER JOIN wizard ON wizard.id=player.wizard_id RIGHT JOIN team ON team.id=player.team_id LIMIT 100[39m
+[34m2024-11-06 17:28:05[39m [32m[ INFO][39m [33mResult: 83 rows retrieved in 7ms[39m
+[34m2024-11-06 17:28:17[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, name FROM player   INNER JOIN wizard ON wizard.id=player.wizard_id RIGHT JOIN team ON team.id=player.team_id LIMIT 100[39m
+[34m2024-11-06 17:28:17[39m [32m[ INFO][39m [33mResult: 83 rows retrieved in 8ms[39m
+[34m2024-11-06 17:28:53[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, name FROM player   INNER JOIN wizard ON wizard.id=player.wizard_id LEFT JOIN team ON team.id=player.team_id LIMIT 100[39m
+[34m2024-11-06 17:28:53[39m [32m[ INFO][39m [33mResult: 83 rows retrieved in 7ms[39m
+[34m2024-11-07 09:33:59[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-07 09:33:59[39m [32m[DEBUG][39m Resource server started on port 8828
+[34m2024-11-07 09:34:11[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349
+[34m2024-11-07 09:34:11[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, name FROM player   INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id LIMIT 100[39m
+[34m2024-11-07 09:34:11[39m [32m[ INFO][39m [33mResult: 83 rows retrieved in 31ms[39m
+[34m2024-11-07 09:36:23[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, name FROM player   INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id WHERE team.id=0 LIMIT 100[39m
+[34m2024-11-07 09:36:23[39m [32m[ INFO][39m [33mResult: Empty set in 20ms[39m
+[34m2024-11-07 09:44:15[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, name FROM player   LEFT JOIN team ON team.id=player.team_id WHERE player.team_id LIMIT 100[39m
+[34m2024-11-07 09:44:16[39m [32m[ERROR][39m [31mUnknown column 'firstname' in 'field list'[39m
+[34m2024-11-07 09:46:07[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, name FROM wizard   LEFT JOIN team ON team.id=player.team_id WHERE player.team_id LIMIT 100[39m
+[34m2024-11-07 09:46:07[39m [32m[ERROR][39m [31mUnknown column 'player.team_id' in 'where clause'[39m
+[34m2024-11-07 09:46:53[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname, name FROM wizard   LEFT JOIN player ON wizard.id=player.team_id WHERE player.team_id LIMIT 100[39m
+[34m2024-11-07 09:46:53[39m [32m[ERROR][39m [31mUnknown column 'name' in 'field list'[39m
+[34m2024-11-07 09:47:07[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM wizard   LEFT JOIN player ON wizard.id=player.team_id WHERE player.team_id LIMIT 100[39m
+[34m2024-11-07 09:47:07[39m [32m[ INFO][39m [33mResult: 83 rows retrieved in 7ms[39m
+[34m2024-11-07 09:47:55[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM wizard   LEFT JOIN player ON wizard.id=player.team_id WHERE player.team_id IS NULL LIMIT 100[39m
+[34m2024-11-07 09:47:55[39m [32m[ INFO][39m [33mResult: 88 rows retrieved in 6ms[39m
+[34m2024-11-07 09:50:33[39m [32m[ INFO][39m [33mExecuting: SELECT w.id, w.firstname, w.lastname FROM wizard w LEFT JOIN player p ON w.id = p.wizard_id WHERE p.team_id IS NULL OR p.team_id = 0 LIMIT 100[39m
+[34m2024-11-07 09:50:33[39m [32m[ INFO][39m [33mResult: 9 rows retrieved in 7ms[39m
+[34m2024-11-07 09:51:08[39m [32m[ INFO][39m [33mExecuting: SELECT w.id, w.firstname, w.lastname FROM wizard AS w LEFT JOIN player AS p ON w.id = p.wizard_id WHERE p.team_id IS NULL OR p.team_id = 0 LIMIT 100[39m
+[34m2024-11-07 09:51:08[39m [32m[ INFO][39m [33mResult: 9 rows retrieved in 28ms[39m
+[34m2024-11-07 10:04:26[39m [32m[ INFO][39m [33mExecuting: SELECT w.id, w.firstname, w.lastname FROM wizard AS w LEFT JOIN player AS p ON w.id = p.wizard_id WHERE p.team_id IS NULL OR p.team_id = 0 LIMIT 100[39m
+[34m2024-11-07 10:04:26[39m [32m[ INFO][39m [33mResult: 9 rows retrieved in 9ms[39m
+[34m2024-11-07 10:07:16[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM player INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id WHERE role='seeker' ORDER BY lastname ASC, firstname ASC LIMIT 100[39m
+[34m2024-11-07 10:07:16[39m [32m[ INFO][39m [33mResult: 16 rows retrieved in 7ms[39m
+[34m2024-11-07 10:07:28[39m [32m[ INFO][39m [33mExecuting: SELECT lastname, firstname, role, name FROM player INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id ORDER BY name ASC, role ASC, lastname ASC, firstname ASC LIMIT 100[39m
+[34m2024-11-07 10:07:28[39m [32m[ INFO][39m [33mResult: 83 rows retrieved in 9ms[39m
+[34m2024-11-07 10:07:35[39m [32m[ INFO][39m [33mExecuting: SELECT w.id, w.firstname, w.lastname FROM wizard AS w LEFT JOIN player AS p ON w.id = p.wizard_id WHERE p.team_id IS NULL OR p.team_id = 0 LIMIT 100[39m
+[34m2024-11-07 10:07:35[39m [32m[ INFO][39m [33mResult: 9 rows retrieved in 7ms[39m
+[34m2024-11-07 10:07:40[39m [32m[ INFO][39m [33mExecuting: SELECT lastname, firstname, role, name FROM player INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id ORDER BY name ASC, role ASC, lastname ASC, firstname ASC LIMIT 100[39m
+[34m2024-11-07 10:07:40[39m [32m[ INFO][39m [33mResult: 83 rows retrieved in 10ms[39m
+[34m2024-11-07 10:08:48[39m [32m[ INFO][39m [33mExecuting: SELECT w.id, w.firstname, w.lastname FROM wizard AS w LEFT JOIN player AS p ON w.id = p.wizard_id LIMIT 100[39m
+[34m2024-11-07 10:08:48[39m [32m[ INFO][39m [33mResult: 92 rows retrieved in 6ms[39m
+[34m2024-11-07 10:09:15[39m [32m[ INFO][39m [33mExecuting: SELECT w.id, w.firstname, w.lastname, p.role FROM wizard AS w LEFT JOIN player AS p ON w.id = p.wizard_id LIMIT 100[39m
+[34m2024-11-07 10:09:15[39m [32m[ INFO][39m [33mResult: 92 rows retrieved in 7ms[39m
+[34m2024-11-07 10:09:34[39m [32m[ INFO][39m [33mExecuting: SELECT w.id, w.firstname, w.lastname FROM wizard AS w LEFT JOIN player AS p ON w.id = p.wizard_id LIMIT 100[39m
+[34m2024-11-07 10:09:34[39m [32m[ INFO][39m [33mResult: 92 rows retrieved in 7ms[39m
+[34m2024-11-07 10:09:49[39m [32m[ INFO][39m [33mExecuting: SELECT w.id, w.firstname, w.lastname FROM wizard AS w LEFT JOIN player AS p ON w.id = p.wizard_id WHERE p.team_id IS NULL OR p.team_id = 0 LIMIT 100[39m
+[34m2024-11-07 10:09:49[39m [32m[ INFO][39m [33mResult: 9 rows retrieved in 6ms[39m
+[34m2024-11-07 10:24:07[39m [32m[ INFO][39m [33mExecuting: SHOW TABLES[39m
+[34m2024-11-07 10:24:07[39m [32m[ INFO][39m [33mResult: 2 rows retrieved in 24ms[39m
+[34m2024-11-07 10:24:17[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-07 10:24:17[39m [32m[ INFO][39m [33mResult: 8 rows retrieved in 7ms[39m
+[34m2024-11-07 10:24:25[39m [32m[ INFO][39m [33mExecuting: DESCRIBE school[39m
+[34m2024-11-07 10:24:25[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 6ms[39m
+[34m2024-11-07 10:24:41[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-07 10:24:41[39m [32m[ INFO][39m [33mResult: 8 rows retrieved in 5ms[39m
+[34m2024-11-07 10:25:07[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-07 10:25:07[39m [32m[ INFO][39m [33mResult: 8 rows retrieved in 5ms[39m
+[34m2024-11-07 10:25:57[39m [32m[ INFO][39m [33mExecuting: DESCRIBE wizard[39m
+[34m2024-11-07 10:25:57[39m [32m[ INFO][39m [33mResult: 8 rows retrieved in 18ms[39m
+[34m2024-11-07 10:47:10[39m [32m[ INFO][39m [33mExecuting: DROP DATABASE IF EXISTS wild_db_quests_advanced[39m
+[34m2024-11-07 10:47:10[39m [32m[ INFO][39m [33mResult: 3 rows affected in 66ms[39m
+[34m2024-11-07 10:47:13[39m [32m[ INFO][39m [33mExecuting: CREATE DATABASE wild_db_quests_advanced[39m
+[34m2024-11-07 10:47:13[39m [32m[ INFO][39m [33mResult: 1 rows affected in 21ms[39m
+[34m2024-11-07 10:47:21[39m [32m[ INFO][39m [33mExecuting: USE wild_db_quests_advanced[39m
+[34m2024-11-07 10:47:21[39m [32m[ INFO][39m [33mResult: 0 rows affected in 5ms[39m
+[34m2024-11-07 10:47:36[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE school(   id INT NOT NULL AUTO_INCREMENT,   name VARCHAR(100) NOT NULL,   capacity INT,   PRIMARY KEY (id) )[39m
+[34m2024-11-07 10:47:36[39m [32m[ INFO][39m [33mResult: 0 rows affected in 40ms[39m
+[34m2024-11-07 10:47:40[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE wizard(   id INT NOT NULL AUTO_INCREMENT,   firstname VARCHAR(100) NOT NULL,   lastname VARCHAR(100) NOT NULL,   school_id INT,   PRIMARY KEY (id),   CONSTRAINT fk_wizard_school FOREIGN KEY (school_id) REFERENCES school(id) )[39m
+[34m2024-11-07 10:47:40[39m [32m[ INFO][39m [33mResult: 0 rows affected in 77ms[39m
+[34m2024-11-07 10:47:44[39m [32m[ INFO][39m [33mExecuting: INSERT INTO school   (id, name, capacity)   VALUES   (1, 'Beauxbatons Academy of Magic', 550),   (2, 'Castelobruxo', 380),   (3, 'Durmstrang Institute', 570),   (4, 'Hogwarts School of Witchcraft and Wizardry', 450),   (5, 'Ilvermorny School of Witchcraft and Wizar', 300),   (6, 'Koldovstoretz', 125),   (7, 'Mahoutokoro School of Magic', 800),   (8, 'Uagadou School of Magic', 350)[39m
+[34m2024-11-07 10:47:44[39m [32m[ INFO][39m [33mResult: 8 rows affected in 26ms[39m
+[34m2024-11-07 10:47:45[39m [32m[ INFO][39m [33mExecuting: INSERT INTO wizard   (firstname, lastname, school_id)   VALUES   ('fleur', 'delacour', 1),   ('gabrielle', 'delacour', 1),   ('viktor', 'krum', 3),   ('gellert', 'grindelwald', 3),   ('harry', 'potter', 4),   ('hermione', 'granger', 4),   ('lily', 'potter', 4),   ('ron', 'weasley', 4),   ('ginny', 'weasley', 4),   ('fred', 'weasley', 4),   ('george', 'weasley', 4),   ('arthur', 'weasley', 4),   ('molly', 'weasley', 4),   ('drago', 'malefoy', 4),   ('albus', 'dumbledore', 4),   ('severus', 'rogue', 4),   ('tom', 'jédusor', 4),   ('dudley', 'dursley', 4),   ('babajide', 'akingbade', 8),   ('dudley', 'dursley', NULL)[39m
+[34m2024-11-07 10:47:45[39m [32m[ INFO][39m [33mResult: 20 rows affected in 23ms[39m
+[34m2024-11-07 15:57:29[39m [32m[ INFO][39m [33mExecuting: SELECT   s.name, COUNT(*) as nb_student FROM   wizard w INNER JOIN   school AS s ON s.id=w.school_id GROUP BY   s.id LIMIT 100[39m
+[34m2024-11-07 15:57:29[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 19ms[39m
+[34m2024-11-07 15:58:37[39m [32m[ INFO][39m [33mExecuting: SELECT   s.name, COUNT(*) as nb_student FROM   wizard w INNER JOIN   school AS s ON s.id=w.school_id GROUP BY   s.id LIMIT 100[39m
+[34m2024-11-07 15:58:37[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 4ms[39m
+[34m2024-11-07 15:59:56[39m [32m[ INFO][39m [33mExecuting: SELECT   s.name, COUNT(*) FROM   wizard w INNER JOIN   school AS s ON s.id=w.school_id GROUP BY   s.id LIMIT 100[39m
+[34m2024-11-07 15:59:56[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 2ms[39m
+[34m2024-11-07 16:00:34[39m [32m[ INFO][39m [33mExecuting: SELECT   s.name, COUNT(*) as nb_student /* on renomme COUNT pour que ce soit plus simple*/ FROM   wizard w INNER JOIN   school AS s ON s.id=w.school_id GROUP BY   s.id HAVING   nb_student > 3 LIMIT 100[39m
+[34m2024-11-07 16:00:34[39m [32m[ INFO][39m [33mResult: 1 rows retrieved in 18ms[39m
+[34m2024-11-07 16:02:07[39m [32m[ INFO][39m [33mExecuting: SELECT   s.name, COUNT(*) as nb_student /* on renomme COUNT pour que ce soit plus simple*/ FROM   wizard w INNER JOIN   school AS s ON s.id=w.school_id GROUP BY   s.id WHERE    /* Meme fonctionnement de WHERE mais WHERE s'applique sur les tuples, HAVING sur le regroupement donc APRES le GROUP BY*/   nb_student > 3 LIMIT 100[39m
+[34m2024-11-07 16:02:07[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE    /* Meme fonctionnement de WHERE mais WHERE s'applique sur les tuples, H' at line 9[39m
+[34m2024-11-07 16:02:29[39m [32m[ INFO][39m [33mExecuting: SELECT   s.name, COUNT(*) as nb_student /* on renomme COUNT pour que ce soit plus simple*/ FROM   wizard w INNER JOIN   school AS s ON s.id=w.school_id GROUP BY   s.id WHERE   nb_student > 3 LIMIT 100[39m
+[34m2024-11-07 16:02:29[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE[39m
+[31m  nb_student > 3 LIMIT 100' at line 9[39m
+[34m2024-11-07 16:02:42[39m [32m[ INFO][39m [33mExecuting: SELECT   s.name, COUNT(*) as nb_student /* on renomme COUNT pour que ce soit plus simple*/ FROM   wizard w INNER JOIN   school AS s ON s.id=w.school_id GROUP BY   s.id HAVING    /* Meme fonctionnement de WHERE mais WHERE s'applique sur les tuples, HAVING sur le regroupement donc APRES le GROUP BY*/   nb_student > 3 LIMIT 100[39m
+[34m2024-11-07 16:02:42[39m [32m[ INFO][39m [33mResult: 1 rows retrieved in 4ms[39m
+[34m2024-11-07 16:05:03[39m [32m[ INFO][39m [33mExecuting: SELECT CONCAT(firstname, ' ', lastname) AS fullname FROM wizard LIMIT 100[39m
+[34m2024-11-07 16:05:03[39m [32m[ INFO][39m [33mResult: 20 rows retrieved in 18ms[39m
+[34m2024-11-07 16:06:10[39m [32m[ INFO][39m [33mExecuting: SELECT CONCAT(firstname, ' ', lastname) FROM wizard LIMIT 100[39m
+[34m2024-11-07 16:06:10[39m [32m[ INFO][39m [33mResult: 20 rows retrieved in 3ms[39m
+[34m2024-11-07 16:06:19[39m [32m[ INFO][39m [33mExecuting: SELECT CONCAT(firstname, ' ', lastname) AS fullname FROM wizard LIMIT 100[39m
+[34m2024-11-07 16:06:19[39m [32m[ INFO][39m [33mResult: 20 rows retrieved in 2ms[39m
+[34m2024-11-07 16:08:39[39m [32m[ INFO][39m [33mExecuting: DROP DATABASE IF EXISTS wild_db_quests_advanced[39m
+[34m2024-11-07 16:08:39[39m [32m[ INFO][39m [33mResult: 2 rows affected in 48ms[39m
+[34m2024-11-07 16:08:41[39m [32m[ INFO][39m [33mExecuting: CREATE DATABASE wild_db_quests_advanced[39m
+[34m2024-11-07 16:08:41[39m [32m[ INFO][39m [33mResult: 1 rows affected in 19ms[39m
+[34m2024-11-07 16:08:43[39m [32m[ INFO][39m [33mExecuting: USE wild_db_quests_advanced[39m
+[34m2024-11-07 16:08:43[39m [32m[ INFO][39m [33mResult: 0 rows affected in 2ms[39m
+[34m2024-11-07 16:08:47[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE wizard(   id INT NOT NULL AUTO_INCREMENT,   firstname VARCHAR(100) NOT NULL,   lastname VARCHAR(100) NOT NULL,   PRIMARY KEY (id) )[39m
+[34m2024-11-07 16:08:47[39m [32m[ INFO][39m [33mResult: 0 rows affected in 32ms[39m
+[34m2024-11-07 16:08:49[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE team(   id INT NOT NULL AUTO_INCREMENT,   name VARCHAR(100) NOT NULL,   PRIMARY KEY (id) )[39m
+[34m2024-11-07 16:08:49[39m [32m[ INFO][39m [33mResult: 0 rows affected in 26ms[39m
+[34m2024-11-07 16:08:50[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE player(   id INT NOT NULL AUTO_INCREMENT,   wizard_id INT NOT NULL,   team_id INT NULL,   role VARCHAR(100) NOT NULL,   enrollment_date DATE NOT NULL,   PRIMARY KEY (id),   CONSTRAINT fk_player_wizard FOREIGN KEY (wizard_id) REFERENCES wizard(id),   CONSTRAINT fk_player_team FOREIGN KEY (team_id) REFERENCES team(id) )[39m
+[34m2024-11-07 16:08:50[39m [32m[ INFO][39m [33mResult: 0 rows affected in 52ms[39m
+[34m2024-11-07 16:08:51[39m [32m[ INFO][39m [33mExecuting: INSERT INTO team   (id, name)   VALUES   (1, 'Gryffindor'), (2, 'Ravenclaw'), (3, 'Slytherin'), (4, 'Hufflepuff')[39m
+[34m2024-11-07 16:08:51[39m [32m[ INFO][39m [33mResult: 4 rows affected in 19ms[39m
+[34m2024-11-07 16:08:52[39m [32m[ INFO][39m [33mExecuting: INSERT INTO wizard   (id, firstname, lastname)   VALUES   (1, 'Hannah', 'Abbott'), (2, 'Katie', 'Bell'), (3, 'Cuthbert', 'Binns'), (4, 'Phineas', 'Nigellus'), (5, 'Regulus', 'Black'), (6, 'Sirius', 'Black'), (7, 'Amelia', 'Bones'), (8, 'Susan', 'Bones'), (9, 'Terry', 'Boot'), (10, 'Lavender', 'Brown'), (11, 'Millicent', 'Bulstrode'), (12, 'Cho', 'Chang'), (13, 'Penelope', 'Clearwater'), (14, 'Michael', 'Corner'), (15, 'Crabbe', ''), (16, 'Vincent', 'Crabbe'), (17, 'Colin', 'Creevey'), (18, 'Dennis', 'Creevey'), (19, 'Cedric', 'Diggory'), (20, 'Aberforth', 'Dumbledore'), (21, 'Albus', 'Dumbledore'), (22, 'Marietta', 'Edgecombe'), (23, 'Justin', 'Finch-Fletchley'), (24, 'Seamus', 'Finnigan'), (25, 'Marcus', 'Flint'), (26, 'Filius', 'Flitwick'), (27, 'Anthony', 'Goldstein'), (28, 'Gregory', 'Goyle'), (29, 'Hermione', 'Granger'), (30, 'Godric', 'Gryffindor'), (31, 'Rubeus', 'Hagrid'), (32, 'Helga', 'Hufflepuff'), (33, 'Angelina', 'Johnson'), (34, 'Lee', 'Jordan'), (35, 'Bellatrix', 'Lestrange'), (36, 'Rabastan', 'Lestrange'), (37, 'Rodolphus', 'Lestrange'), (38, 'Gilderoy', 'Lockhart'), (39, 'Alice', 'Longbottom'), (40, 'Frank', 'Longbottom'), (41, 'Augusta', 'Longbottom'), (42, 'Neville', 'Longbottom'), (43, 'Luna', 'Lovegood'), (44, 'Xenophilius', 'Lovegood'), (45, 'Remus', 'Lupin'), (46, 'Draco', 'Malfoy'), (47, 'Lucius', 'Malfoy'), (48, 'Narcissa', 'Malfoy'), (49, 'Minerva', 'McGonagall'), (50, 'Theodore', 'Nott'), (51, 'Garrick', 'Ollivander'), (52, 'Pansy', 'Parkinson'), (53, 'Padma', 'Patil'), (54, 'Parvati', 'Patil'), (55, 'Peter', 'Pettigrew'), (56, 'Harry', 'Potter'), (57, 'James', 'Potter'), (58, 'Lily', 'J.'), (59, 'Quirinus', 'Quirrell'), (60, 'Helena', 'Ravenclaw'), (61, 'Rowena', 'Ravenclaw'), (62, 'Tom', 'Riddle'), (63, 'Demelza', 'Robins'), (64, 'Newton', 'Scamander'), (65, 'Horace', 'Slughorn'), (66, 'Salazar', 'Slytherin'), (67, 'Hepzibah', 'Smith'), (68, 'Zacharias', 'Smith'), (69, 'Severus', 'Snape'), (70, 'Alicia', 'Spinnet'), (71, 'Pomona', 'Sprout'), (72, 'Dean', 'Thomas'), (73, 'Andromeda', 'Tonks'), (74, 'Nymphadora', 'Tonks'), (75, 'Sybill', 'Trelawney'), (76, 'Dolores', 'Umbridge'), (77, 'Romilda', 'Vane'), (78, 'Arthur', 'Weasley'), (79, 'William', 'Weasley'), (80, 'Charles', 'Weasley'), (81, 'Fred', 'Weasley'), (82, 'George', 'Weasley'), (83, 'Ginevra', 'Weasley'), (84, 'Molly', 'Weasley'), (85, 'Percy', 'Weasley'), (86, 'Ronald', 'Weasley'), (87, 'Oliver', 'Wood'), (88, 'Blaise', 'Zabini'), (89, 'Bloody', 'Baron'), (90, 'Cadogan', ''), (91, 'Fat', 'Friar'), (92, 'Myrtle', 'Warren')[39m
+[34m2024-11-07 16:08:52[39m [32m[ INFO][39m [33mResult: 92 rows affected in 28ms[39m
+[34m2024-11-07 16:08:54[39m [32m[ INFO][39m [33mExecuting: INSERT INTO player   (id, wizard_id, team_id, role, enrollment_date)   VALUES   (1, 1, 4, 'beater', '1995-10-09'), (2, 2, 1, 'chaser', '1995-08-17'), (3, 3, 1, 'seeker', '1994-12-03'), (4, 4, 3, 'chaser', '1995-03-24'), (5, 5, 3, 'keeper', '1997-07-16'), (6, 6, 1, 'beater', '1994-01-10'), (7, 7, 4, 'chaser', '1999-01-21'), (8, 8, 4, 'keeper', '1991-10-20'), (10, 10, 1, 'beater', '1991-08-03'), (11, 11, 3, 'beater', '1996-10-04'), (12, 12, 2, 'chaser', '1992-01-27'), (13, 13, 2, 'beater', '1991-01-11'), (14, 14, 2, 'seeker', '1995-08-17'), (16, 16, 3, 'beater', '1992-11-27'), (17, 17, 1, 'seeker', '1993-07-07'), (18, 18, 1, 'keeper', '1991-05-01'), (19, 19, 4, 'keeper', '1997-11-02'), (20, 20, 1, 'keeper', '1995-04-24'), (21, 21, 1, 'chaser', '1991-03-12'), (22, 22, 2, 'chaser', '1990-07-05'), (23, 23, 4, 'beater', '1995-01-06'), (24, 24, 1, 'beater', '1997-02-08'), (25, 25, 3, 'beater', '1996-12-16'), (26, 26, 2, 'chaser', '1997-02-07'), (27, 27, 2, 'chaser', '1999-07-31'), (28, 28, 3, 'seeker', '1994-05-13'), (29, 29, 1, 'chaser', '1997-08-14'), (30, 30, 1, 'seeker', '1993-08-30'), (31, 31, 1, 'beater', '1994-11-16'), (32, 32, 4, 'seeker', '1992-08-14'), (33, 33, 1, 'keeper', '1995-12-02'), (34, 34, 1, 'chaser', '1996-01-31'), (35, 35, 3, 'chaser', '1992-03-21'), (36, 36, 3, 'seeker', '1997-10-30'), (37, 37, 3, 'chaser', '1991-04-27'), (38, 38, 2, 'chaser', '1998-04-05'), (39, 39, 1, 'beater', '1992-02-17'), (40, 40, 1, 'chaser', '1995-10-15'), (41, 41, 1, 'chaser', '1999-10-25'), (42, 42, 1, 'chaser', '1998-05-06'), (43, 43, 2, 'chaser', '1998-03-01'), (44, 44, 2, 'chaser', '1991-03-11'), (46, 46, 3, 'chaser', '1993-11-02'), (47, 47, 3, 'chaser', '1992-03-12'), (48, 48, 3, 'seeker', '1993-03-17'), (49, 49, 1, 'beater', '1992-07-14'), (50, 50, 3, 'chaser', '1996-12-02'), (51, 51, 2, 'chaser', '1995-06-25'), (52, 52, 3, 'beater', '1991-12-14'), (55, 55, 1, 'chaser', '1991-05-14'), (56, 56, 1, 'beater', '1997-03-05'), (57, 57, 1, 'beater', '1996-12-07'), (58, 58, 1, 'chaser', '1999-02-23'), (59, 59, 2, 'beater', '1995-09-23'), (60, 60, 2, 'beater', '1992-04-12'), (61, 61, 2, 'seeker', '1992-10-09'), (62, 62, 3, 'chaser', '1990-02-27'), (64, 64, 4, 'chaser', '1999-01-12'), (66, 66, 3, 'seeker', '1991-02-23'), (67, 67, 4, 'beater', '1996-07-18'), (68, 68, 4, 'keeper', '1993-10-01'), (69, 69, 3, 'beater', '1997-03-06'), (70, 70, 1, 'chaser', '1995-11-08'), (71, 71, 4, 'beater', '1998-06-12'), (72, 72, 1, 'beater', '1997-11-23'), (73, 73, 3, 'chaser', '1994-01-28'), (74, 74, 4, 'beater', '1999-11-25'), (75, 75, 2, 'seeker', '1991-12-28'), (76, 76, 3, 'seeker', '1993-10-23'), (77, 77, 1, 'seeker', '1990-07-31'), (78, 78, 1, 'beater', '1992-01-01'), (79, 79, 1, 'seeker', '1991-04-27'), (81, 81, 1, 'seeker', '1998-03-29'), (82, 82, 1, 'chaser', '1991-08-26'), (83, 83, 1, 'keeper', '1992-04-17'), (85, 85, 1, 'beater', '1990-09-05'), (86, 86, 1, 'seeker', '1997-06-22'), (87, 87, 1, 'chaser', '1999-04-08'), (88, 88, 3, 'beater', '1991-07-08'), (89, 89, 3, 'chaser', '1996-09-25'), (90, 90, 1, 'keeper', '1993-01-04'), (91, 91, 4, 'beater', '1993-11-04'), (92, 92, 2, 'beater', '1997-12-14')[39m
+[34m2024-11-07 16:08:54[39m [32m[ INFO][39m [33mResult: 83 rows affected in 28ms[39m
+[34m2024-11-07 17:14:26[39m [32m[ INFO][39m [33mExecuting: DROP DATABASE IF EXISTS wild_db_quests_advanced[39m
+[34m2024-11-07 17:14:26[39m [32m[ INFO][39m [33mResult: 3 rows affected in 60ms[39m
+[34m2024-11-07 17:14:27[39m [32m[ INFO][39m [33mExecuting: CREATE DATABASE wild_db_quests_advanced[39m
+[34m2024-11-07 17:14:27[39m [32m[ INFO][39m [33mResult: 1 rows affected in 8ms[39m
+[34m2024-11-07 17:14:28[39m [32m[ INFO][39m [33mExecuting: USE wild_db_quests_advanced[39m
+[34m2024-11-07 17:14:28[39m [32m[ INFO][39m [33mResult: 0 rows affected in 6ms[39m
+[34m2024-11-07 17:14:28[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE wizard(   id INT NOT NULL AUTO_INCREMENT,   firstname VARCHAR(100) NOT NULL,   lastname VARCHAR(100) NOT NULL,   PRIMARY KEY (id) )[39m
+[34m2024-11-07 17:14:28[39m [32m[ INFO][39m [33mResult: 0 rows affected in 42ms[39m
+[34m2024-11-07 17:14:29[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE team(   id INT NOT NULL AUTO_INCREMENT,   name VARCHAR(80) NOT NULL,   PRIMARY KEY (id)     )[39m
+[34m2024-11-07 17:14:29[39m [32m[ INFO][39m [33mResult: 0 rows affected in 28ms[39m
+[34m2024-11-07 17:14:30[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE player(   id INT NOT NULL AUTO_INCREMENT,   PRIMARY KEY (id),   `role` VARCHAR(50),   enrollment_date DATE DEFAULT NULL,   wizard_id INT NOT NULL,   team_id INT NULL,   CONSTRAINT fk_player_wizard FOREIGN KEY (wizard_id) REFERENCES wizard(id), /*Relier les id avec ceux dans les tables correspondantes */   CONSTRAINT fk_player_team FOREIGN KEY (team_id) REFERENCES team(id)  )[39m
+[34m2024-11-07 17:14:30[39m [32m[ INFO][39m [33mResult: 0 rows affected in 80ms[39m
+[34m2024-11-07 17:14:31[39m [32m[ INFO][39m [33mExecuting: INSERT INTO team   (id, name)   VALUES   (1, 'Gryffindor'), (2, 'Ravenclaw'), (3, 'Slytherin'), (4, 'Hufflepuff')[39m
+[34m2024-11-07 17:14:31[39m [32m[ INFO][39m [33mResult: 4 rows affected in 21ms[39m
+[34m2024-11-07 17:14:34[39m [32m[ INFO][39m [33mExecuting: INSERT INTO team   (id, name)   VALUES   (1, 'Gryffindor'), (2, 'Ravenclaw'), (3, 'Slytherin'), (4, 'Hufflepuff')[39m
+[34m2024-11-07 17:14:34[39m [32m[ERROR][39m [31mDuplicate entry '1' for key 'team.PRIMARY'[39m
+[34m2024-11-07 17:14:36[39m [32m[ INFO][39m [33mExecuting: INSERT INTO wizard   (id, firstname, lastname)   VALUES   (1, 'Hannah', 'Abbott'), (2, 'Katie', 'Bell'), (3, 'Cuthbert', 'Binns'), (4, 'Phineas', 'Nigellus'), (5, 'Regulus', 'Black'), (6, 'Sirius', 'Black'), (7, 'Amelia', 'Bones'), (8, 'Susan', 'Bones'), (9, 'Terry', 'Boot'), (10, 'Lavender', 'Brown'), (11, 'Millicent', 'Bulstrode'), (12, 'Cho', 'Chang'), (13, 'Penelope', 'Clearwater'), (14, 'Michael', 'Corner'), (15, 'Crabbe', ''), (16, 'Vincent', 'Crabbe'), (17, 'Colin', 'Creevey'), (18, 'Dennis', 'Creevey'), (19, 'Cedric', 'Diggory'), (20, 'Aberforth', 'Dumbledore'), (21, 'Albus', 'Dumbledore'), (22, 'Marietta', 'Edgecombe'), (23, 'Justin', 'Finch-Fletchley'), (24, 'Seamus', 'Finnigan'), (25, 'Marcus', 'Flint'), (26, 'Filius', 'Flitwick'), (27, 'Anthony', 'Goldstein'), (28, 'Gregory', 'Goyle'), (29, 'Hermione', 'Granger'), (30, 'Godric', 'Gryffindor'), (31, 'Rubeus', 'Hagrid'), (32, 'Helga', 'Hufflepuff'), (33, 'Angelina', 'Johnson'), (34, 'Lee', 'Jordan'), (35, 'Bellatrix', 'Lestrange'), (36, 'Rabastan', 'Lestrange'), (37, 'Rodolphus', 'Lestrange'), (38, 'Gilderoy', 'Lockhart'), (39, 'Alice', 'Longbottom'), (40, 'Frank', 'Longbottom'), (41, 'Augusta', 'Longbottom'), (42, 'Neville', 'Longbottom'), (43, 'Luna', 'Lovegood'), (44, 'Xenophilius', 'Lovegood'), (45, 'Remus', 'Lupin'), (46, 'Draco', 'Malfoy'), (47, 'Lucius', 'Malfoy'), (48, 'Narcissa', 'Malfoy'), (49, 'Minerva', 'McGonagall'), (50, 'Theodore', 'Nott'), (51, 'Garrick', 'Ollivander'), (52, 'Pansy', 'Parkinson'), (53, 'Padma', 'Patil'), (54, 'Parvati', 'Patil'), (55, 'Peter', 'Pettigrew'), (56, 'Harry', 'Potter'), (57, 'James', 'Potter'), (58, 'Lily', 'J.'), (59, 'Quirinus', 'Quirrell'), (60, 'Helena', 'Ravenclaw'), (61, 'Rowena', 'Ravenclaw'), (62, 'Tom', 'Riddle'), (63, 'Demelza', 'Robins'), (64, 'Newton', 'Scamander'), (65, 'Horace', 'Slughorn'), (66, 'Salazar', 'Slytherin'), (67, 'Hepzibah', 'Smith'), (68, 'Zacharias', 'Smith'), (69, 'Severus', 'Snape'), (70, 'Alicia', 'Spinnet'), (71, 'Pomona', 'Sprout'), (72, 'Dean', 'Thomas'), (73, 'Andromeda', 'Tonks'), (74, 'Nymphadora', 'Tonks'), (75, 'Sybill', 'Trelawney'), (76, 'Dolores', 'Umbridge'), (77, 'Romilda', 'Vane'), (78, 'Arthur', 'Weasley'), (79, 'William', 'Weasley'), (80, 'Charles', 'Weasley'), (81, 'Fred', 'Weasley'), (82, 'George', 'Weasley'), (83, 'Ginevra', 'Weasley'), (84, 'Molly', 'Weasley'), (85, 'Percy', 'Weasley'), (86, 'Ronald', 'Weasley'), (87, 'Oliver', 'Wood'), (88, 'Blaise', 'Zabini'), (89, 'Bloody', 'Baron'), (90, 'Cadogan', ''), (91, 'Fat', 'Friar'), (92, 'Myrtle', 'Warren')[39m
+[34m2024-11-07 17:14:36[39m [32m[ INFO][39m [33mResult: 92 rows affected in 43ms[39m
+[34m2024-11-07 17:14:37[39m [32m[ INFO][39m [33mExecuting: INSERT INTO player   (id, wizard_id, team_id, role, enrollment_date)   VALUES   (1, 1, 4, 'beater', '1995-10-09'), (2, 2, 1, 'chaser', '1995-08-17'), (3, 3, 1, 'seeker', '1994-12-03'), (4, 4, 3, 'chaser', '1995-03-24'), (5, 5, 3, 'keeper', '1997-07-16'), (6, 6, 1, 'beater', '1994-01-10'), (7, 7, 4, 'chaser', '1999-01-21'), (8, 8, 4, 'keeper', '1991-10-20'), (10, 10, 1, 'beater', '1991-08-03'), (11, 11, 3, 'beater', '1996-10-04'), (12, 12, 2, 'chaser', '1992-01-27'), (13, 13, 2, 'beater', '1991-01-11'), (14, 14, 2, 'seeker', '1995-08-17'), (16, 16, 3, 'beater', '1992-11-27'), (17, 17, 1, 'seeker', '1993-07-07'), (18, 18, 1, 'keeper', '1991-05-01'), (19, 19, 4, 'keeper', '1997-11-02'), (20, 20, 1, 'keeper', '1995-04-24'), (21, 21, 1, 'chaser', '1991-03-12'), (22, 22, 2, 'chaser', '1990-07-05'), (23, 23, 4, 'beater', '1995-01-06'), (24, 24, 1, 'beater', '1997-02-08'), (25, 25, 3, 'beater', '1996-12-16'), (26, 26, 2, 'chaser', '1997-02-07'), (27, 27, 2, 'chaser', '1999-07-31'), (28, 28, 3, 'seeker', '1994-05-13'), (29, 29, 1, 'chaser', '1997-08-14'), (30, 30, 1, 'seeker', '1993-08-30'), (31, 31, 1, 'beater', '1994-11-16'), (32, 32, 4, 'seeker', '1992-08-14'), (33, 33, 1, 'keeper', '1995-12-02'), (34, 34, 1, 'chaser', '1996-01-31'), (35, 35, 3, 'chaser', '1992-03-21'), (36, 36, 3, 'seeker', '1997-10-30'), (37, 37, 3, 'chaser', '1991-04-27'), (38, 38, 2, 'chaser', '1998-04-05'), (39, 39, 1, 'beater', '1992-02-17'), (40, 40, 1, 'chaser', '1995-10-15'), (41, 41, 1, 'chaser', '1999-10-25'), (42, 42, 1, 'chaser', '1998-05-06'), (43, 43, 2, 'chaser', '1998-03-01'), (44, 44, 2, 'chaser', '1991-03-11'), (46, 46, 3, 'chaser', '1993-11-02'), (47, 47, 3, 'chaser', '1992-03-12'), (48, 48, 3, 'seeker', '1993-03-17'), (49, 49, 1, 'beater', '1992-07-14'), (50, 50, 3, 'chaser', '1996-12-02'), (51, 51, 2, 'chaser', '1995-06-25'), (52, 52, 3, 'beater', '1991-12-14'), (55, 55, 1, 'chaser', '1991-05-14'), (56, 56, 1, 'beater', '1997-03-05'), (57, 57, 1, 'beater', '1996-12-07'), (58, 58, 1, 'chaser', '1999-02-23'), (59, 59, 2, 'beater', '1995-09-23'), (60, 60, 2, 'beater', '1992-04-12'), (61, 61, 2, 'seeker', '1992-10-09'), (62, 62, 3, 'chaser', '1990-02-27'), (64, 64, 4, 'chaser', '1999-01-12'), (66, 66, 3, 'seeker', '1991-02-23'), (67, 67, 4, 'beater', '1996-07-18'), (68, 68, 4, 'keeper', '1993-10-01'), (69, 69, 3, 'beater', '1997-03-06'), (70, 70, 1, 'chaser', '1995-11-08'), (71, 71, 4, 'beater', '1998-06-12'), (72, 72, 1, 'beater', '1997-11-23'), (73, 73, 3, 'chaser', '1994-01-28'), (74, 74, 4, 'beater', '1999-11-25'), (75, 75, 2, 'seeker', '1991-12-28'), (76, 76, 3, 'seeker', '1993-10-23'), (77, 77, 1, 'seeker', '1990-07-31'), (78, 78, 1, 'beater', '1992-01-01'), (79, 79, 1, 'seeker', '1991-04-27'), (81, 81, 1, 'seeker', '1998-03-29'), (82, 82, 1, 'chaser', '1991-08-26'), (83, 83, 1, 'keeper', '1992-04-17'), (85, 85, 1, 'beater', '1990-09-05'), (86, 86, 1, 'seeker', '1997-06-22'), (87, 87, 1, 'chaser', '1999-04-08'), (88, 88, 3, 'beater', '1991-07-08'), (89, 89, 3, 'chaser', '1996-09-25'), (90, 90, 1, 'keeper', '1993-01-04'), (91, 91, 4, 'beater', '1993-11-04'), (92, 92, 2, 'beater', '1997-12-14')[39m
+[34m2024-11-07 17:14:37[39m [32m[ INFO][39m [33mResult: 83 rows affected in 40ms[39m
+[34m2024-11-07 17:14:39[39m [32m[ INFO][39m [33mExecuting: SELECT lastname, firstname, role, name FROM player INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id ORDER BY name ASC, role ASC, lastname ASC, firstname ASC LIMIT 100[39m
+[34m2024-11-07 17:14:39[39m [32m[ INFO][39m [33mResult: 83 rows retrieved in 12ms[39m
+[34m2024-11-07 17:15:20[39m [32m[ INFO][39m [33mExecuting: SELECT firstname, lastname FROM player INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id WHERE role='seeker' ORDER BY lastname ASC, firstname ASC LIMIT 100[39m
+[34m2024-11-07 17:15:20[39m [32m[ INFO][39m [33mResult: 16 rows retrieved in 10ms[39m
+[34m2024-11-07 17:21:45[39m [32m[ INFO][39m [33mExecuting: SELECT lastname, firstname, role, name FROM player INNER JOIN wizard ON wizard.id=player.wizard_id INNER JOIN team ON team.id=player.team_id ORDER BY name ASC, role ASC, lastname ASC, firstname ASC LIMIT 100[39m
+[34m2024-11-07 17:21:45[39m [32m[ INFO][39m [33mResult: 83 rows retrieved in 9ms[39m
+[34m2024-11-07 17:23:51[39m [32m[ INFO][39m [33mExecuting: DROP DATABASE IF EXISTS wild_db_quests_advanced[39m
+[34m2024-11-07 17:23:51[39m [32m[ INFO][39m [33mResult: 3 rows affected in 53ms[39m
+[34m2024-11-07 17:23:51[39m [32m[ INFO][39m [33mExecuting: CREATE DATABASE wild_db_quests_advanced[39m
+[34m2024-11-07 17:23:51[39m [32m[ INFO][39m [33mResult: 1 rows affected in 21ms[39m
+[34m2024-11-07 17:23:52[39m [32m[ INFO][39m [33mExecuting: USE wild_db_quests_advanced[39m
+[34m2024-11-07 17:23:52[39m [32m[ INFO][39m [33mResult: 0 rows affected in 4ms[39m
+[34m2024-11-07 17:23:52[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE wizard(   id INT NOT NULL AUTO_INCREMENT,   firstname VARCHAR(100) NOT NULL,   lastname VARCHAR(100) NOT NULL,   PRIMARY KEY (id) )[39m
+[34m2024-11-07 17:23:53[39m [32m[ INFO][39m [33mResult: 0 rows affected in 40ms[39m
+[34m2024-11-07 17:23:54[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE team(   id INT NOT NULL AUTO_INCREMENT,   name VARCHAR(100) NOT NULL,   PRIMARY KEY (id) )[39m
+[34m2024-11-07 17:23:54[39m [32m[ INFO][39m [33mResult: 0 rows affected in 37ms[39m
+[34m2024-11-07 17:23:54[39m [32m[ INFO][39m [33mExecuting: CREATE TABLE player(   id INT NOT NULL AUTO_INCREMENT,   wizard_id INT NOT NULL,   team_id INT NULL,   role VARCHAR(100) NOT NULL,   enrollment_date DATE NOT NULL,   PRIMARY KEY (id),   CONSTRAINT fk_player_wizard FOREIGN KEY (wizard_id) REFERENCES wizard(id),   CONSTRAINT fk_player_team FOREIGN KEY (team_id) REFERENCES team(id) )[39m
+[34m2024-11-07 17:23:54[39m [32m[ INFO][39m [33mResult: 0 rows affected in 71ms[39m
+[34m2024-11-07 17:23:55[39m [32m[ INFO][39m [33mExecuting: INSERT INTO team   (id, name)   VALUES   (1, 'Gryffindor'), (2, 'Ravenclaw'), (3, 'Slytherin'), (4, 'Hufflepuff')[39m
+[34m2024-11-07 17:23:56[39m [32m[ INFO][39m [33mResult: 4 rows affected in 20ms[39m
+[34m2024-11-07 17:23:57[39m [32m[ INFO][39m [33mExecuting: INSERT INTO wizard   (id, firstname, lastname)   VALUES   (1, 'Hannah', 'Abbott'), (2, 'Katie', 'Bell'), (3, 'Cuthbert', 'Binns'), (4, 'Phineas', 'Nigellus'), (5, 'Regulus', 'Black'), (6, 'Sirius', 'Black'), (7, 'Amelia', 'Bones'), (8, 'Susan', 'Bones'), (9, 'Terry', 'Boot'), (10, 'Lavender', 'Brown'), (11, 'Millicent', 'Bulstrode'), (12, 'Cho', 'Chang'), (13, 'Penelope', 'Clearwater'), (14, 'Michael', 'Corner'), (15, 'Crabbe', ''), (16, 'Vincent', 'Crabbe'), (17, 'Colin', 'Creevey'), (18, 'Dennis', 'Creevey'), (19, 'Cedric', 'Diggory'), (20, 'Aberforth', 'Dumbledore'), (21, 'Albus', 'Dumbledore'), (22, 'Marietta', 'Edgecombe'), (23, 'Justin', 'Finch-Fletchley'), (24, 'Seamus', 'Finnigan'), (25, 'Marcus', 'Flint'), (26, 'Filius', 'Flitwick'), (27, 'Anthony', 'Goldstein'), (28, 'Gregory', 'Goyle'), (29, 'Hermione', 'Granger'), (30, 'Godric', 'Gryffindor'), (31, 'Rubeus', 'Hagrid'), (32, 'Helga', 'Hufflepuff'), (33, 'Angelina', 'Johnson'), (34, 'Lee', 'Jordan'), (35, 'Bellatrix', 'Lestrange'), (36, 'Rabastan', 'Lestrange'), (37, 'Rodolphus', 'Lestrange'), (38, 'Gilderoy', 'Lockhart'), (39, 'Alice', 'Longbottom'), (40, 'Frank', 'Longbottom'), (41, 'Augusta', 'Longbottom'), (42, 'Neville', 'Longbottom'), (43, 'Luna', 'Lovegood'), (44, 'Xenophilius', 'Lovegood'), (45, 'Remus', 'Lupin'), (46, 'Draco', 'Malfoy'), (47, 'Lucius', 'Malfoy'), (48, 'Narcissa', 'Malfoy'), (49, 'Minerva', 'McGonagall'), (50, 'Theodore', 'Nott'), (51, 'Garrick', 'Ollivander'), (52, 'Pansy', 'Parkinson'), (53, 'Padma', 'Patil'), (54, 'Parvati', 'Patil'), (55, 'Peter', 'Pettigrew'), (56, 'Harry', 'Potter'), (57, 'James', 'Potter'), (58, 'Lily', 'J.'), (59, 'Quirinus', 'Quirrell'), (60, 'Helena', 'Ravenclaw'), (61, 'Rowena', 'Ravenclaw'), (62, 'Tom', 'Riddle'), (63, 'Demelza', 'Robins'), (64, 'Newton', 'Scamander'), (65, 'Horace', 'Slughorn'), (66, 'Salazar', 'Slytherin'), (67, 'Hepzibah', 'Smith'), (68, 'Zacharias', 'Smith'), (69, 'Severus', 'Snape'), (70, 'Alicia', 'Spinnet'), (71, 'Pomona', 'Sprout'), (72, 'Dean', 'Thomas'), (73, 'Andromeda', 'Tonks'), (74, 'Nymphadora', 'Tonks'), (75, 'Sybill', 'Trelawney'), (76, 'Dolores', 'Umbridge'), (77, 'Romilda', 'Vane'), (78, 'Arthur', 'Weasley'), (79, 'William', 'Weasley'), (80, 'Charles', 'Weasley'), (81, 'Fred', 'Weasley'), (82, 'George', 'Weasley'), (83, 'Ginevra', 'Weasley'), (84, 'Molly', 'Weasley'), (85, 'Percy', 'Weasley'), (86, 'Ronald', 'Weasley'), (87, 'Oliver', 'Wood'), (88, 'Blaise', 'Zabini'), (89, 'Bloody', 'Baron'), (90, 'Cadogan', ''), (91, 'Fat', 'Friar'), (92, 'Myrtle', 'Warren')[39m
+[34m2024-11-07 17:23:57[39m [32m[ INFO][39m [33mResult: 92 rows affected in 34ms[39m
+[34m2024-11-07 17:23:58[39m [32m[ INFO][39m [33mExecuting: INSERT INTO player   (id, wizard_id, team_id, role, enrollment_date)   VALUES   (1, 1, 4, 'beater', '1995-10-09'), (2, 2, 1, 'chaser', '1995-08-17'), (3, 3, 1, 'seeker', '1994-12-03'), (4, 4, 3, 'chaser', '1995-03-24'), (5, 5, 3, 'keeper', '1997-07-16'), (6, 6, 1, 'beater', '1994-01-10'), (7, 7, 4, 'chaser', '1999-01-21'), (8, 8, 4, 'keeper', '1991-10-20'), (10, 10, 1, 'beater', '1991-08-03'), (11, 11, 3, 'beater', '1996-10-04'), (12, 12, 2, 'chaser', '1992-01-27'), (13, 13, 2, 'beater', '1991-01-11'), (14, 14, 2, 'seeker', '1995-08-17'), (16, 16, 3, 'beater', '1992-11-27'), (17, 17, 1, 'seeker', '1993-07-07'), (18, 18, 1, 'keeper', '1991-05-01'), (19, 19, 4, 'keeper', '1997-11-02'), (20, 20, 1, 'keeper', '1995-04-24'), (21, 21, 1, 'chaser', '1991-03-12'), (22, 22, 2, 'chaser', '1990-07-05'), (23, 23, 4, 'beater', '1995-01-06'), (24, 24, 1, 'beater', '1997-02-08'), (25, 25, 3, 'beater', '1996-12-16'), (26, 26, 2, 'chaser', '1997-02-07'), (27, 27, 2, 'chaser', '1999-07-31'), (28, 28, 3, 'seeker', '1994-05-13'), (29, 29, 1, 'chaser', '1997-08-14'), (30, 30, 1, 'seeker', '1993-08-30'), (31, 31, 1, 'beater', '1994-11-16'), (32, 32, 4, 'seeker', '1992-08-14'), (33, 33, 1, 'keeper', '1995-12-02'), (34, 34, 1, 'chaser', '1996-01-31'), (35, 35, 3, 'chaser', '1992-03-21'), (36, 36, 3, 'seeker', '1997-10-30'), (37, 37, 3, 'chaser', '1991-04-27'), (38, 38, 2, 'chaser', '1998-04-05'), (39, 39, 1, 'beater', '1992-02-17'), (40, 40, 1, 'chaser', '1995-10-15'), (41, 41, 1, 'chaser', '1999-10-25'), (42, 42, 1, 'chaser', '1998-05-06'), (43, 43, 2, 'chaser', '1998-03-01'), (44, 44, 2, 'chaser', '1991-03-11'), (46, 46, 3, 'chaser', '1993-11-02'), (47, 47, 3, 'chaser', '1992-03-12'), (48, 48, 3, 'seeker', '1993-03-17'), (49, 49, 1, 'beater', '1992-07-14'), (50, 50, 3, 'chaser', '1996-12-02'), (51, 51, 2, 'chaser', '1995-06-25'), (52, 52, 3, 'beater', '1991-12-14'), (55, 55, 1, 'chaser', '1991-05-14'), (56, 56, 1, 'beater', '1997-03-05'), (57, 57, 1, 'beater', '1996-12-07'), (58, 58, 1, 'chaser', '1999-02-23'), (59, 59, 2, 'beater', '1995-09-23'), (60, 60, 2, 'beater', '1992-04-12'), (61, 61, 2, 'seeker', '1992-10-09'), (62, 62, 3, 'chaser', '1990-02-27'), (64, 64, 4, 'chaser', '1999-01-12'), (66, 66, 3, 'seeker', '1991-02-23'), (67, 67, 4, 'beater', '1996-07-18'), (68, 68, 4, 'keeper', '1993-10-01'), (69, 69, 3, 'beater', '1997-03-06'), (70, 70, 1, 'chaser', '1995-11-08'), (71, 71, 4, 'beater', '1998-06-12'), (72, 72, 1, 'beater', '1997-11-23'), (73, 73, 3, 'chaser', '1994-01-28'), (74, 74, 4, 'beater', '1999-11-25'), (75, 75, 2, 'seeker', '1991-12-28'), (76, 76, 3, 'seeker', '1993-10-23'), (77, 77, 1, 'seeker', '1990-07-31'), (78, 78, 1, 'beater', '1992-01-01'), (79, 79, 1, 'seeker', '1991-04-27'), (81, 81, 1, 'seeker', '1998-03-29'), (82, 82, 1, 'chaser', '1991-08-26'), (83, 83, 1, 'keeper', '1992-04-17'), (85, 85, 1, 'beater', '1990-09-05'), (86, 86, 1, 'seeker', '1997-06-22'), (87, 87, 1, 'chaser', '1999-04-08'), (88, 88, 3, 'beater', '1991-07-08'), (89, 89, 3, 'chaser', '1996-09-25'), (90, 90, 1, 'keeper', '1993-01-04'), (91, 91, 4, 'beater', '1993-11-04'), (92, 92, 2, 'beater', '1997-12-14')[39m
+[34m2024-11-07 17:23:58[39m [32m[ INFO][39m [33mResult: 83 rows affected in 36ms[39m
+[34m2024-11-08 09:14:47[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-08 09:14:47[39m [32m[DEBUG][39m Resource server started on port 8828
+[34m2024-11-08 09:34:01[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349
+[34m2024-11-08 09:34:01[39m [32m[ INFO][39m [33mExecuting: SELECT    team.name, COUNT(*) AS effectif FROM    player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id GROUP BY   team_id ORDER BY effectif DESC LIMIT 100[39m
+[34m2024-11-08 09:34:01[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 28ms[39m
+[34m2024-11-08 09:36:11[39m [32m[ INFO][39m [33mExecuting: SELECT    team.name, COUNT(*) AS effectif FROM    player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id LIMIT 100[39m
+[34m2024-11-08 09:36:11[39m [32m[ERROR][39m [31mIn aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'wild_db_quests_advanced.team.name'; this is incompatible with sql_mode=only_full_group_by[39m
+[34m2024-11-08 09:36:13[39m [32m[ INFO][39m [33mExecuting: SELECT    team.name, COUNT(*) AS effectif FROM    player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id LIMIT 100[39m
+[34m2024-11-08 09:36:13[39m [32m[ERROR][39m [31mIn aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'wild_db_quests_advanced.team.name'; this is incompatible with sql_mode=only_full_group_by[39m
+[34m2024-11-08 09:36:33[39m [32m[ INFO][39m [33mExecuting: SELECT  COUNT(*) AS effectif FROM    player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id LIMIT 100[39m
+[34m2024-11-08 09:36:33[39m [32m[ INFO][39m [33mResult: 1 rows retrieved in 7ms[39m
+[34m2024-11-08 09:36:49[39m [32m[ INFO][39m [33mExecuting: SELECT    team.name, COUNT(*) AS effectif FROM    player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id GROUP BY   team_id ORDER BY effectif DESC LIMIT 100[39m
+[34m2024-11-08 09:36:49[39m [32m[ INFO][39m [33mResult: 4 rows retrieved in 8ms[39m
+[34m2024-11-08 09:42:20[39m [32m[ INFO][39m [33mExecuting: SELECT    team.name, COUNT(*) AS effectif FROM    player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id GROUP BY   team_id HAVING   effectif > 14 ORDER BY effectif DESC LIMIT 100[39m
+[34m2024-11-08 09:42:20[39m [32m[ INFO][39m [33mResult: 3 rows retrieved in 8ms[39m
+[34m2024-11-08 09:42:44[39m [32m[ INFO][39m [33mExecuting: SELECT    team.name, COUNT(*) AS effectif FROM    player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id GROUP BY   team_id HAVING   effectif > 14 ORDER BY team.name ASC LIMIT 100[39m
+[34m2024-11-08 09:42:44[39m [32m[ INFO][39m [33mResult: 3 rows retrieved in 9ms[39m
+[34m2024-11-08 09:52:27[39m [32m[ INFO][39m [33mExecuting: SELECT CONCAT(wizard.firstname, ' ', wizard.lastname) AS fullname, DAYOFWEEK(enrollment_date) FROM player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id WHERE   DAYOFWEEK(enrollment_date) = 2 AND team.name = 'Gryffindor' LIMIT 100[39m
+[34m2024-11-08 09:52:27[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 26ms[39m
+[34m2024-11-08 09:55:19[39m [32m[ INFO][39m [33mExecuting: SELECT CONCAT(wizard.firstname, ' ', wizard.lastname) AS fullname, DAYOFWEEK(enrollment_date) FROM player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id WHERE   DAYOFWEEK(enrollment_date) = 2 AND team.name = 'Gryffindor' ORDER BY enrollment_date ASC LIMIT 100[39m
+[34m2024-11-08 09:55:19[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 11ms[39m
+[34m2024-11-08 09:55:33[39m [32m[ INFO][39m [33mExecuting: SELECT CONCAT(wizard.firstname, ' ', wizard.lastname) AS fullname FROM player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id WHERE   DAYOFWEEK(enrollment_date) = 2 AND team.name = 'Gryffindor' ORDER BY enrollment_date ASC LIMIT 100[39m
+[34m2024-11-08 09:55:33[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 8ms[39m
+[34m2024-11-08 09:56:00[39m [32m[ INFO][39m [33mExecuting: SELECT CONCAT(wizard.firstname, ' ', wizard.lastname) AS fullname, enrollment_date FROM player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id WHERE   DAYOFWEEK(enrollment_date) = 2 AND team.name = 'Gryffindor' ORDER BY enrollment_date ASC LIMIT 100[39m
+[34m2024-11-08 09:56:00[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 8ms[39m
+[34m2024-11-08 09:56:25[39m [32m[ INFO][39m [33mExecuting: SELECT CONCAT(wizard.firstname, ' ', wizard.lastname) AS fullname INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id WHERE   DAYOFWEEK(enrollment_date) = 2 AND team.name = 'Gryffindor' ORDER BY enrollment_date ASC[39m
+[34m2024-11-08 09:56:25[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN [39m
+[31m  wizard ON wizard.id=player.wizard_id[39m
+[31mINNER JOIN [39m
+[31m  team ON team.id' at line 2[39m
+[34m2024-11-08 09:56:35[39m [32m[ INFO][39m [33mExecuting: SELECT CONCAT(wizard.firstname, ' ', wizard.lastname) AS fullname FROM player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id WHERE   DAYOFWEEK(enrollment_date) = 2 AND team.name = 'Gryffindor' ORDER BY enrollment_date ASC LIMIT 100[39m
+[34m2024-11-08 09:56:35[39m [32m[ INFO][39m [33mResult: 7 rows retrieved in 9ms[39m
+[34m2024-11-08 09:57:23[39m [32m[ INFO][39m [33mExecuting: SELECT    team.name, COUNT(*) AS effectif FROM    player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id GROUP BY   team_id HAVING   effectif > 14 ORDER BY team.name ASC LIMIT 100[39m
+[34m2024-11-08 09:57:23[39m [32m[ INFO][39m [33mResult: 3 rows retrieved in 12ms[39m
+[34m2024-11-08 09:59:09[39m [32m[ INFO][39m [33mExecuting: SELECT    team.name, COUNT(*) AS effectif FROM    player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id ORDER BY team.name ASC LIMIT 100[39m
+[34m2024-11-08 09:59:09[39m [32m[ERROR][39m [31mIn aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'wild_db_quests_advanced.team.name'; this is incompatible with sql_mode=only_full_group_by[39m
+[34m2024-11-08 09:59:21[39m [32m[ INFO][39m [33mExecuting: SELECT    team.name, COUNT(*) AS effectif FROM    player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id GROUP BY   team_id HAVING   effectif > 14 ORDER BY team.name ASC LIMIT 100[39m
+[34m2024-11-08 09:59:21[39m [32m[ INFO][39m [33mResult: 3 rows retrieved in 8ms[39m
+[34m2024-11-08 09:59:42[39m [32m[ INFO][39m [33mExecuting: SELECT    team.name FROM    player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id GROUP BY   team_id HAVING    COUNT(*) AS effectif > 14 ORDER BY team.name ASC LIMIT 100[39m
+[34m2024-11-08 09:59:42[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS effectif > 14[39m
+[31mORDER BY team.name ASC LIMIT 100' at line 12[39m
+[34m2024-11-08 09:59:48[39m [32m[ INFO][39m [33mExecuting: SELECT    team.name FROM    player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id GROUP BY   team_id HAVING    COUNT(*) > 14 ORDER BY team.name ASC LIMIT 100[39m
+[34m2024-11-08 09:59:48[39m [32m[ INFO][39m [33mResult: 3 rows retrieved in 9ms[39m
+[34m2024-11-08 10:00:48[39m [32m[ INFO][39m [33mExecuting: SELECT    team.name, COUNT(*) AS effectif FROM    player INNER JOIN    wizard ON wizard.id=player.wizard_id INNER JOIN    team ON team.id=player.team_id GROUP BY   team_id HAVING   effectif > 14 ORDER BY team.name ASC LIMIT 100[39m
+[34m2024-11-08 10:00:48[39m [32m[ INFO][39m [33mResult: 3 rows retrieved in 7ms[39m
+[34m2024-11-08 10:00:59[39m [32m[ INFO][39m [33mExecuting: SELECT      ->   team.name     -> FROM      ->   player     -> INNER JOIN      ->   wizard ON wizard.id=player.wizard_id     -> INNER JOIN      ->   team ON team.id=player.team_id     -> GROUP BY     ->   team_id     -> HAVING     ->    COUNT(*) > 14     -> ORDER BY team.name ASC LIMIT 100[39m
+[34m2024-11-08 10:00:59[39m [32m[ERROR][39m [31mYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '->   team.name[39m
+[31m    -> FROM [39m
+[31m    ->   player[39m
+[31m    -> INNER JOIN [39m
+[31m    ->   wizard O' at line 2[39m
+[34m2024-11-08 10:01:27[39m [32m[ INFO][39m [33mExecuting: SELECT  team.name FROM  player INNER JOIN  wizard ON wizard.id=player.wizard_id INNER JOIN  team ON team.id=player.team_id GROUP BY team_id HAVING  COUNT(*) > 14 ORDER BY team.name ASC LIMIT 100[39m
+[34m2024-11-08 10:01:27[39m [32m[ INFO][39m [33mResult: 3 rows retrieved in 7ms[39m
+[34m2024-11-08 10:08:00[39m [32m[DEBUG][39m Resource server started on port 8828
+[34m2024-11-08 10:09:03[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+[34m2024-11-08 10:12:20[39m [32m[DEBUG][39m Resource server started on port 8828
+[34m2024-11-08 10:15:43[39m [32m[DEBUG][39m Creating MySQL connection for 1730728120349_tree
+
